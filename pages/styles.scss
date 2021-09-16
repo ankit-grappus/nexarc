@@ -1,0 +1,26 @@
+@import "../styles/variables/colors";
+@import "../styles/variables/mixins";
+
+.looking-for--sec {
+  margin: -280px 0 80px;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include mobile {
+    margin-bottom: 0;
+  }
+
+  .container-fluid {
+    &.custom {
+      @include tablet {
+        padding: 0;
+      }
+      @include mobile {
+        padding: 0;
+      }
+    }
+  }
+}

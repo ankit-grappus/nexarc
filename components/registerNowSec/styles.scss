@@ -1,0 +1,94 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.register-now--sec {
+  position: relative;
+  background: $theme-bg;
+  padding: 50px 0px;
+  min-height: 492px;
+  overflow: hidden;
+  z-index: 1;
+
+  @include tablet {
+    min-height: 100%;
+    padding-bottom: 492px;
+  }
+  @include mobile {
+    min-height: 100%;
+    padding-bottom: 200px;
+  }
+  .content-box {
+    max-width: 55%;
+    padding-top: 54px;
+    z-index: 1;
+    position: relative;
+
+    @include tablet {
+      max-width: 100%;
+    }
+    @include mobile {
+      max-width: 100%;
+      padding-top: 0;
+    }
+  }
+  .heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 53px;
+    letter-spacing: -0.4px;
+    margin: 20px 0px 40px;
+
+    @include mobile {
+      font-size: 26px;
+      line-height: 42px;
+    }
+    @include iphone5 {
+      font-size: 22px;
+      line-height: 35px;
+    }
+  }
+  .image-box {
+    // position: relative;
+    z-index: 1;
+
+    .arc {
+      display: none;
+
+      @include tablet {
+        display: block;
+        z-index: 0;
+        right: 0;
+        top: auto;
+        bottom: -147px;
+        width: 80%;
+        height: 100%;
+      }
+      @include mobile {
+        display: block;
+        bottom: -100px;
+        width: 80%;
+        height: 100%;
+        z-index: -1;
+        right: 0px;
+      }
+    }
+    .user {
+      right: 0;
+      top: 0;
+      z-index: 0;
+
+      @include tablet {
+        top: auto;
+        bottom: 0;
+        height: auto;
+      }
+      @include mobile {
+        top: auto;
+        bottom: 0px;
+        width: 70%;
+        z-index: -1;
+        height: auto;
+      }
+    }
+  }
+}

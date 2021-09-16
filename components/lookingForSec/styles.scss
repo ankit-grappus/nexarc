@@ -1,0 +1,212 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.looking-for-block {
+  background: $white;
+  border-radius: 32px;
+  box-shadow: 0px 10px 39px rgba($black, 0.08);
+  padding: 50px 40px;
+
+  @include tablet {
+    border-radius: 32px 32px 0 0;
+  }
+  @include mobile {
+    border-radius: 20px 20px 0 0;
+    padding: 24px 15px;
+  }
+
+  .heading {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 44px;
+    color: $theme-bg;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include mobile {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .vertical-navbar-box {
+    .vertical-tabs {
+      @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        flex-direction: row !important;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 8px;
+        flex-direction: row !important;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      @include iphone5 {
+        grid-column-gap: 5px;
+      }
+    }
+    .nav-item {
+      & + .nav-item {
+        margin-top: 15px;
+
+        @include tablet {
+          margin: 0px;
+        }
+        @include mobile {
+          margin: 0px;
+        }
+      }
+    }
+    .nav-link {
+      border-radius: 7px;
+      background: rgba(216, 216, 216, 0.15);
+      padding: 0 15px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      border-left: 5px solid transparent;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      color: #979797;
+
+      @include tablet {
+        border: 2px solid rgba($theme-bg, 0.1);
+        text-align: center;
+        line-height: 22px;
+      }
+      @include mobile {
+        border: 2px solid rgba($theme-bg, 0.1);
+        text-align: center;
+        padding: 5px;
+        height: 46px;
+      }
+
+      &.active {
+        background: rgba(130, 60, 255, 0.05);
+        border-color: $theme-primary;
+        color: $theme-primary;
+        font-weight: 600;
+
+        @include tablet {
+          background: $theme-primary;
+          color: $white;
+        }
+        @include mobile {
+          background: $theme-primary;
+          color: $white;
+        }
+
+        .tab-icon {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+
+      .nav-heading {
+        @include tablet {
+          flex-direction: column;
+        }
+        @include mobile {
+          justify-content: center;
+        }
+      }
+
+      .tab-icon {
+        filter: grayscale(1);
+        opacity: 0.45;
+
+        @include tablet {
+          display: none;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .tab-name {
+        @include mobile {
+          font-size: 10px;
+          line-height: 16px;
+        }
+        @include iphone5 {
+          font-size: 9px;
+        }
+      }
+    }
+    .tab-content-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+
+      @include mobile {
+        display: block;
+      }
+
+      .link {
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          opacity: 0.75;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          @include mobile {
+            width: calc(50% - 5px);
+            display: block;
+            float: left;
+          }
+        }
+        &:nth-child(1) {
+          @include mobile {
+            margin: 0px 5px 20px 0px;
+          }
+        }
+        &:nth-child(2) {
+          @include mobile {
+            margin: 0px 0px 20px 5px;
+          }
+        }
+      }
+
+      .item-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        background: rgba($black, 0.8);
+
+        @include mobile {
+          height: 160px;
+        }
+      }
+      .item-name {
+        flex: 1;
+        color: $theme-bg;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-right: 20px;
+        max-width: 60%;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 19px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

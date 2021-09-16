@@ -1,0 +1,23 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.tata-enterprice-text {
+  color: $theme-seagreen;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .tata-logo {
+    vertical-align: baseline;
+
+    @include mobile {
+      height: 14px;
+    }
+  }
+}

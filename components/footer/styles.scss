@@ -1,0 +1,117 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.footer-container {
+  .footer-logo--block,
+  .footer-top--block,
+  .footer-bottom--block {
+    padding: 30px 0px;
+  }
+  .logo {
+    height: 33px;
+  }
+
+  .footer-top--block {
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 30px;
+
+    @include mobile {
+      display: block;
+    }
+  }
+  .footer-bottom--block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .footer-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $black;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+    max-width: 85%;
+
+    @include tablet {
+      max-width: 100%;
+    }
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer-top--block {
+    .footer-route-box {
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-route-box {
+    &:nth-child(3) {
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      @include tablet {
+        margin-top: 30px;
+      }
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
+  }
+  .route-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 6px;
+  }
+  .route-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .route-li {
+    & + .route-li {
+      margin-top: 2px;
+    }
+
+    .link {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      color: $gray-4d;
+    }
+  }
+  .copyright-text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $gray-4d;
+    padding: 0px 0px 30px;
+
+    @include mobile {
+      border-top: 2px solid $border-color;
+      padding: 30px 0px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+// variables
+@import "./variables/colors";
+@import "./variables/mixins";
+
+// theme styles files
+@import "./xtras";
+// @import "./fonts";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// bootstrap cdn
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
+
+// slick-carousel
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+// custom css
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-container {
+  position: relative;
+  overflow: hidden;
+  // height: 100%;
+  // overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Typography Style
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
+  margin: 0;
+}
+
+.title1 {
+  font-size: 2rem;
+  line-height: 39px;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 1.75rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title3 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 600;
+
+  // For Mobile view
+  @include mobile {
+    font-size: 1.3rem;
+  }
+}
+
+.title4 {
+  font-size: 1.3rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title5 {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.title6 {
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.container-fluid {
+  &.custom {
+    padding: 0px 60px;
+
+    @include tablet {
+      padding: 0px 30px;
+    }
+    @include mobile {
+      padding: 0px 15px;
+    }
+  }
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.primary-text-color {
+  color: $theme-primary;
+}
+.secondary-text-color {
+  color: $theme-secondary;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

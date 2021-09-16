@@ -1,0 +1,56 @@
+// ######################################## //
+// ## FONTS.SCSS ## //
+// ######################################## //
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Light.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Book.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Book.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Roman.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Roman.otf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Medium.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Heavy.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Heavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/AvenirLTStd-Black.otf"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirLTStd-Black.otf") format("truetype");
+}
