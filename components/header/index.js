@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Link from 'next/link'
+import Router from 'next/router'
+
 // styles
 import "./styles.scss"
 
-// import logo from "../../static/assets/images/logo-nexarc.svg";
-// import tataLogo from "../../static/assets/images/logo-tata.svg";
-// import searchIcon from "../../static/assets/images/icons/icon-search-dark.svg";
 import PrimaryButton from "../button";
 import HeaderMenu from "./headerMenu";
 
@@ -45,10 +43,12 @@ function Header() {
                 <PrimaryButton
                   className="login-btn btn-sm ml--10"
                   buttonName="Login"
+                  onClick={() => Router.push("https://www.nexarc.in/login//")}
                 />
                 <PrimaryButton
                   className="primary btn-sm register-btn ml--10 mr--10"
                   buttonName="Register Now"
+                  onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
                 />
                 <img className="logo" src="../../static/assets/images/logo-tata.svg" alt="tata logo" width="32" height="30" />
               </div>

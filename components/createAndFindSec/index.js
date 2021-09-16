@@ -1,3 +1,5 @@
+import Router from 'next/router'
+
 // styles
 import "./styles.scss"
 
@@ -14,6 +16,7 @@ function CreateAndFindSec() {
               className="register-btn transparent-btn"
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
+              onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
             />
           </div>
           <div className="image-box">
@@ -27,6 +30,7 @@ function CreateAndFindSec() {
               className="find-btn transparent-btn"
               buttonName="View Tenders & Quotations"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-dark.svg"
+              onClick={() => Router.push("https://www.nexarc.in/tender-and-quotations//")}
             />
           </div>
           <div className="image-box">

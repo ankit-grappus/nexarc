@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link';
 import { menuItem } from "./menuData"
 
 function HeaderMenu() {
