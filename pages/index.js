@@ -1,6 +1,3 @@
-// styles
-import "./styles.scss"
-
 import Helmet from '../components/Seo'
 import Header from '../components/header'
 import HeroSliderSec from '../components/heroSliderSec'
