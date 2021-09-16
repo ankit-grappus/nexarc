@@ -27,8 +27,8 @@ export default function App() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Nexarc" />
         <meta property="og:url" content="https://nexarc.grappus.sbtechzone.com/" />
-        <meta property="og:image" content="https://nexarc.grappus.sbtechzone.com/static/assets/images/man-2.png" />
-        <meta property="og:image:url" content="https://nexarc.grappus.sbtechzone.com/static/assets/images/man-2.png" />
+        <meta property="og:image" content="https://nexarc.grappus.sbtechzone.com/static/assets/images/NexarcLogoOG.jpeg" />
+        <meta property="og:image:url" content="https://nexarc.grappus.sbtechzone.com/static/assets/images/NexarcLogoOG.jpeg" />
         <meta property="og:image:alt" content="Nexarc" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
