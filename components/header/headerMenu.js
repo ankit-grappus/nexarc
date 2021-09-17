@@ -38,9 +38,9 @@ function HeaderMenu() {
                     <>
                       {/* <div className="menu-fixed-layer" onClick={fixedLayerCloseMenu}></div> */}
                       <div className="submenu">
-                        {item.submenu.map((menuItem) => {
+                        {item.submenu.map((menuItem, index) => {
                           return (
-                            <a className="submenu-link" href={menuItem.submenuLink}>{menuItem.title}</a>
+                            <a key={index} className="submenu-link" href={menuItem.submenuLink}>{menuItem.title}</a>
                           )
                         })}
                       </div>

@@ -42,10 +42,10 @@ function TestimonialSlider() {
         adaptiveHeight={true}
         className="sliderData-slider"
       >
-        {sliderData.map((item) => {
+        {sliderData.map((item, index) => {
           return (
             <>
-              <div className="slider-content-block">
+              <div className="slider-content-block" key={index}>
                 <div className="slider-content">
                   <div className="row">
                     <div className="col-12 col-lg-7">
@@ -87,10 +87,10 @@ function TestimonialSlider() {
         infinite={false}
         className="thumbnail-slider"
       >
-        {thumbnailData.map((data) => {
+        {thumbnailData.map((data, index) => {
           return (
             <>
-              <div className="slider-thumbnail-block">
+              <div key={index} className="slider-thumbnail-block">
                 <div className="thumbnail-content fx fx--ai-c">
                   <div className="user-img-box mr--20">
                     <img className="user-img" src={data.userImg} alt="user icon" width="52" height="52" />

@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <>
-      <div className="header-container">
+      <header className="header-container">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg">
             <div className="navbar-brand">
@@ -29,6 +29,7 @@ function Header() {
             <button
               className={`navbar-toggler ${show ? "show" : ""}`}
               onClick={toggleShow}
+              aria-label="Justify"
             >
               <span className="navbar-toggler-icon"></span>
               <span className="navbar-toggler-icon"></span>
@@ -54,17 +55,17 @@ function Header() {
               </div>
             </div>
 
-            <div className="search-main-box">
+            {/* <div className="search-main-box">
               {expand &&
                 <input className="search-input" type="text" />
               }
               <div className="search-box" onClick={() => expandSearch()}>
                 <img className="search-icon" src="../../static/assets/images/icons/icon-search-dark.svg" alt="search icon" width="14" height="14" />
               </div>
-            </div>
+            </div> */}
           </nav>
         </div>
-      </div>
+      </header>
     </>
   )
 }

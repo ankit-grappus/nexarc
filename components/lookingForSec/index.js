@@ -15,7 +15,7 @@ function LookingForSec({ secHeading }) {
                 <Nav variant="pills" className="flex-column vertical-tabs">
                   {navItems.map((item, index) => {
                     return (
-                      <Nav.Item>
+                      <Nav.Item key={index}>
                         <Nav.Link eventKey={index}>{item.navLink}</Nav.Link>
                       </Nav.Item>
                     )
@@ -26,7 +26,7 @@ function LookingForSec({ secHeading }) {
                 <Tab.Content>
                   {tabContents.map((item, index) => {
                     return (
-                      <Tab.Pane eventKey={index}>
+                      <Tab.Pane eventKey={index} key={index}>
                         {item.tabContent}
                       </Tab.Pane>
                     )

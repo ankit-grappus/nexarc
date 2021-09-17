@@ -1,12 +1,12 @@
 // tab 1
 export const tab1Content = [
   {
-    link: "#",
+    link: "https://www.nexarc.in/tender-and-quotations/",
     itemImg: "../../static/assets/images/services-img/tab1/1.png",
     itemName: "View latest tenders"
   },
   {
-    link: "#",
+    link: "https://www.nexarc.in/business/",
     itemImg: "../../static/assets/images/services-img/tab1/2.png",
     itemName: "Connect with businesses"
   },

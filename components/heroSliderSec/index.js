@@ -22,7 +22,7 @@ function HeroSliderSec() {
         >
           {carouselItems.map((item, index) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item key={index}>
                 <Carousel.Caption>
                   {item.sliderContent}
                 </Carousel.Caption>
