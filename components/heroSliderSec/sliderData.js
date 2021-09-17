@@ -43,7 +43,7 @@ export const Slider3Data = () => {
           buttonName="Request a demo"
           btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
         />
-        <img className="slider-rt-image absolute" src="../../static/assets/images/data-protection.png" alt="lappy" width="647" height="414" />
+        <img className="slider-rt-image absolute" src="../../static/assets/images/data-protection.png" alt="lappy" width="443" height="296" />
       </div>
     </>
   )
