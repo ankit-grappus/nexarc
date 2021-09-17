@@ -13,7 +13,7 @@ function CreateAndFindSec() {
           <div className="heading text-white">Create your online business profile</div>
           <div className="btn-box">
             <PrimaryButton
-              className="register-btn transparent-btn"
+              className="register-btn transparent-btn btn-lg"
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
               onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
@@ -27,7 +27,7 @@ function CreateAndFindSec() {
           <div className="heading">Find relevant leads across industries</div>
           <div className="btn-box">
             <PrimaryButton
-              className="find-btn transparent-btn"
+              className="find-btn transparent-btn btn-lg"
               buttonName="View Tenders & Quotations"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-dark.svg"
               onClick={() => Router.push("https://www.nexarc.in/tender-and-quotations//")}

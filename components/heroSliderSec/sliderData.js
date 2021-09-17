@@ -21,7 +21,7 @@ export const Slider2Data = () => {
         <h3 className="heading md">Are you ready for E-invoicing*?</h3>
         <p className="description text-white">Try the simple & affordable E-invoicing solutions from TCS</p>
         <PrimaryButton
-          className="know-more-btn primary"
+          className="know-more-btn primary btn-lg"
           buttonName="Know more"
           btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
         />

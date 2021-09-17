@@ -9,7 +9,7 @@
   padding: 0px 20px;
   height: 46px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   white-space: nowrap;
   display: inline-flex;
@@ -32,7 +32,11 @@
   &.btn-lg {
     height: 48px;
     padding: 0 30px;
-    font-size: 15px;
+    font-size: 18px;
+
+    @include mobile {
+      font-size: 15px;
+    }
   }
   &:hover {
     opacity: 0.9;

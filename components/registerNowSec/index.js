@@ -13,7 +13,7 @@ function RegisterNowSec({ heading }) {
             <TataEnterpriseText />
             <div className="heading text-white">{heading}</div>
             <PrimaryButton
-              className="register-btn primary"
+              className="register-btn primary btn-lg"
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
             />
