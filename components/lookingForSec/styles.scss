@@ -137,11 +137,12 @@
 
       .tab-name {
         @include mobile {
-          font-size: 10px;
+          font-size: 12px;
           line-height: 16px;
         }
         @include iphone5 {
           font-size: 9px;
+          line-height: 12px;
         }
       }
     }

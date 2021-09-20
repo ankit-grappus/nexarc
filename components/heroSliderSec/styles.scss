@@ -6,6 +6,12 @@
 
   .carousel-inner {
     overflow: inherit;
+
+    @include mobile {
+      min-height: 260px;
+      display: flex;
+      align-items: center;
+    }
   }
   .carousel {
     min-height: 600px;
@@ -78,7 +84,7 @@
     text-align: left;
 
     @include mobile {
-      padding: 50px 0 0 0;
+      padding: 0;
     }
 
     .slider-content {
