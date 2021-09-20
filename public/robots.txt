@@ -1,5 +1,3 @@
-# start of file
-user-agent: *
-disallow: /downloads/
-connect-src 'self'
+User-agent: *
+Disallow: /downloads/
 Sitemap: https://nexarc.grappus.sbtechzone.com/sitemap.xml
