@@ -21,6 +21,7 @@
   .navbar-brand {
     padding: 0;
     margin-right: 22px;
+    cursor: pointer;
 
     @include mobile {
       margin-right: 0;
@@ -291,6 +292,13 @@
     height: 70px;
     display: flex;
     align-items: center;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      .nav-link {
+        opacity: 0.75;
+      }
+    }
 
     @include tablet {
       height: inherit;

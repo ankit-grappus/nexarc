@@ -99,6 +99,11 @@
       font-weight: normal;
       line-height: 24px;
       color: $gray-4d;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        opacity: 0.75;
+      }
     }
   }
   .copyright-text {
