@@ -1,3 +1,5 @@
+import Router from 'next/router'
+
 // styles
 import "./styles.scss"
 
@@ -16,6 +18,7 @@ function RegisterNowSec({ heading }) {
               className="register-btn primary btn-lg"
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
+              onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
             />
           </div>
           <div className="image-box">

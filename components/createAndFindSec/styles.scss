@@ -21,6 +21,9 @@
     position: relative;
     z-index: 1;
 
+    @include desktop-xl {
+      padding: 60px 150px;
+    }
     @include tablet {
       height: 300px;
     }

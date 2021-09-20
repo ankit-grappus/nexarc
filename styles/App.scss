@@ -108,6 +108,9 @@ a {
   &.custom {
     padding: 0px 60px;
 
+    @include desktop-xl {
+      padding: 0 150px;
+    }
     @include tablet {
       padding: 0px 30px;
     }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Router from 'next/router'
+import Link from 'next/link'
 
 // styles
 import "./styles.scss"
@@ -24,7 +25,9 @@ function Header() {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg">
             <div className="navbar-brand">
-              <img className="logo" src="../../static/assets/images/logo-nexarc.svg" alt="nexarc logo" width="137" height="33" />
+              <Link href="/">
+                <img className="logo" src="../../static/assets/images/logo-nexarc.svg" alt="nexarc logo" width="137" height="33" />
+              </Link>
             </div>
             <button
               className={`navbar-toggler ${show ? "show" : ""}`}

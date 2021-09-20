@@ -6,6 +6,9 @@
   position: relative;
   z-index: 1;
 
+  @include desktop-xl {
+    padding: 60px 150px;
+  }
   @include mobile {
     padding: 20px 20px 50px;
   }

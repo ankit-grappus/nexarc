@@ -188,6 +188,9 @@
         border-radius: 10px;
         background: rgba($black, 0.8);
 
+        @include desktop-xl {
+          height: 300px;
+        }
         @include mobile {
           height: 160px;
         }
