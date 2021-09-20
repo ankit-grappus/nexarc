@@ -35,8 +35,9 @@
     font-size: 18px;
 
     @include mobile {
-      font-size: 15px;
-      height: 42px;
+      font-size: 12px;
+      height: 36px;
+      padding: 0 15px;
     }
   }
   &:hover {
