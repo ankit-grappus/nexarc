@@ -52,7 +52,7 @@ function Footer() {
                 ))}
               </ul>
             </div>
-            <div className="footer-route-box">
+            {/* <div className="footer-route-box">
               <div className="route-heading">Get Financing</div>
               <ul className="route-ul">
                 {getFinancingRoutes.map((route, index) => (
@@ -61,7 +61,7 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
             <div className="footer-route-box">
               <div className="route-heading">Get Solutions</div>
               <ul className="route-ul">

@@ -29,23 +29,23 @@ export const menuItem = [
       },
     ]
   },
-  {
-    menuTitle: "Get Financing",
-    submenu: [
-      {
-        title: "Credit Cards",
-        submenuLink: "#"
-      },
-      {
-        title: "Business Loans",
-        submenuLink: "#"
-      },
-      {
-        title: "Bill Discounting",
-        submenuLink: "#"
-      },
-    ]
-  },
+  // {
+  //   menuTitle: "Get Financing",
+  //   submenu: [
+  //     {
+  //       title: "Credit Cards",
+  //       submenuLink: "#"
+  //     },
+  //     {
+  //       title: "Business Loans",
+  //       submenuLink: "#"
+  //     },
+  //     {
+  //       title: "Bill Discounting",
+  //       submenuLink: "#"
+  //     },
+  //   ]
+  // },
   {
     menuTitle: "Find Experts",
     submenu: [
