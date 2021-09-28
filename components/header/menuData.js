@@ -10,10 +10,10 @@ export const menuItem = [
         title: "Businesses",
         submenuLink: "https://www.nexarc.in/business/"
       },
-      {
-        title: "Get Tata Verified",
-        submenuLink: "#"
-      },
+      // {
+      //   title: "Get Tata Verified",
+      //   submenuLink: "#"
+      // },
     ]
   },
   {
@@ -23,10 +23,10 @@ export const menuItem = [
         title: "Apps & Solutions",
         submenuLink: "https://www.nexarc.in/product-services/"
       },
-      {
-        title: "Manage services",
-        submenuLink: "#"
-      },
+      // {
+      //   title: "Manage services",
+      //   submenuLink: "#"
+      // },
     ]
   },
   // {

@@ -52,10 +52,10 @@ export const findOpportunitiesRoutes = [
     link: "https://www.nexarc.in/business/",
     routeName: "Business Connections"
   },
-  {
-    link: "#",
-    routeName: "Get Tata Verified"
-  },
+  // {
+  //   link: "#",
+  //   routeName: "Get Tata Verified"
+  // },
 ]
 
 // Get Financing routes
@@ -80,10 +80,10 @@ export const getSolutionsRoutes = [
     link: "https://www.nexarc.in/product-services/",
     routeName: "Apps & Solutions"
   },
-  {
-    link: "#",
-    routeName: "Managed Services"
-  },
+  // {
+  //   link: "#",
+  //   routeName: "Managed Services"
+  // },
 ]
 
 // Find Experts routes
