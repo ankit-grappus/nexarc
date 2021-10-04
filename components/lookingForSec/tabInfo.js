@@ -7,21 +7,21 @@ export const navItems = [
   {
     navLink:
       <NavHeading
-        icon="../../static/assets/images/icons/icon-stocks-up.svg"
+        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
         tabName="Grow your business"
       />,
   },
   {
     navLink:
       <NavHeading
-        icon="../../static/assets/images/icons/icon-settings.svg"
+        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
         tabName="Improve business operations"
       />,
   },
   {
     navLink:
       <NavHeading
-        icon="../../static/assets/images/icons/icon-book-person.svg"
+        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/icon.svg"
         tabName="Learn & stay updated"
       />,
   },
