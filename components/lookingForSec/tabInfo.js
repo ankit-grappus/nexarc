@@ -1,7 +1,7 @@
 import NavHeading from "./navHeading";
 import TabInnerContent from "./tabInnerContent";
 
-import { tab1Content, tab2Content, tab3Content } from "./tabData";
+import { tab1Content, tab2Content, tab3Content,serviceOffering } from "./tabData";
 
 export const navItems = [
   {

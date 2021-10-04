@@ -5,7 +5,7 @@ import "./styles.scss"
 import Slider from "react-slick";
 
 import PrimaryButton from "../button";
-import { sliderData, thumbnailData } from "./testimonialData";
+import { sliderData, thumbnailData,nexaCustomerData } from "./testimonialData";
 
 function TestimonialSlider() {
 
@@ -42,7 +42,7 @@ function TestimonialSlider() {
         adaptiveHeight={true}
         className="sliderData-slider"
       >
-        {sliderData.map((item, index) => {
+        {nexaCustomerData.map((item, index) => {
           return (
             <>
               <div className="slider-content-block" key={index}>
@@ -51,15 +51,15 @@ function TestimonialSlider() {
                     <div className="col-12 col-lg-7">
                       <div className="media-box">
                         <video>
-                          <source src={item.videoLink} type="video/mp4" />
+                          <source src={item.video} type="video/mp4" />
                         </video>
                       </div>
                     </div>
                     <div className="col-12 col-lg-5">
                       <div className="testimonial-content">
-                        <div className="message">{item.message}</div>
-                        <div className="user-name">{item.userName}</div>
-                        <div className="user-details">{item.userDetails}</div>
+                        <div className="message">{item.quote}</div>
+                        <div className="user-name">{item.name}</div>
+                        <div className="user-details">{item.companyLocation}</div>
                         <div className="action-box">
                           <PrimaryButton
                             buttonName="Try now"
@@ -87,17 +87,17 @@ function TestimonialSlider() {
         infinite={false}
         className="thumbnail-slider"
       >
-        {thumbnailData.map((data, index) => {
+        {nexaCustomerData.map((data, index) => {
           return (
             <>
               <div key={index} className="slider-thumbnail-block">
                 <div className="thumbnail-content fx fx--ai-c">
                   <div className="user-img-box mr--20">
-                    <img className="user-img" src={data.userImg} alt="user icon" width="52" height="52" />
+                    <img className="user-img" src={data.image} alt="user icon" width="52" height="52" />
                   </div>
                   <div className="user-details-box">
-                    <div className="username">{data.userName}</div>
-                    <div className="user-details">{data.userDetails}</div>
+                    <div className="username">{data.name}</div>
+                    <div className="user-details">{data.companyName}</div>
                   </div>
                 </div>
               </div>
