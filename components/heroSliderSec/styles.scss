@@ -29,7 +29,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: url("../../static/assets/images/arc-2.svg") no-repeat;
+      // background: url("../../static/assets/images/arc-2.svg") no-repeat;
       z-index: -1;
 
       @include tablet {
@@ -46,7 +46,7 @@
       top: 0;
       width: 443px;
       height: 100%;
-      background: url("../../static/assets/images/arc-3.svg") no-repeat;
+      // background: url("../../static/assets/images/arc-3.svg") no-repeat;
       z-index: -1;
 
       @include tablet {
@@ -164,14 +164,36 @@
     }
 
     .slider-rt-image {
-      right: 0;
-      bottom: -225px;
+      right: 5px;
+      bottom: -360px;
 
       @include tablet {
         display: none;
       }
       @include mobile {
         display: none;
+      }
+    }
+    .slide-1 {
+      &::before {
+        content: "";
+        position: absolute;
+        background: #1e0a3c;
+        width: 300px;
+        height: 330px;
+        top: 0;
+        right: 0;
+
+        @include tablet {
+          display: none;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+      .slider-rt-image {
+        bottom: -305px;
+        right: 5px;
       }
     }
     .slide-3 {
@@ -192,8 +214,8 @@
         }
       }
       .slider-rt-image {
-        bottom: -115px;
-        right: 30px;
+        bottom: -305px;
+        right: 5px;
       }
     }
   }
