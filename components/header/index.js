@@ -7,6 +7,7 @@ import "./styles.scss"
 
 import PrimaryButton from "../button";
 import HeaderMenu from "./headerMenu";
+import { searchItems } from "./menuData";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -58,14 +59,34 @@ function Header() {
               </div>
             </div>
 
-            {/* <div className="search-main-box">
-              {expand &&
-                <input className="search-input" type="text" />
-              }
-              <div className="search-box" onClick={() => expandSearch()}>
+            <div className="search-main-box" onClick={() => expandSearch()}>
+              <div className="search-box">
                 <img className="search-icon" src="../../static/assets/images/icons/icon-search-dark.svg" alt="search icon" width="14" height="14" />
               </div>
-            </div> */}
+            </div>
+            {expand &&
+              <div class="search-content-box" id="search-content-box">
+                <input class="search-input" type="text" placeholder="Type here to search" />
+                <div class="search-content">
+                  <h3 class="search-title">You might be interested in</h3>
+                  <div class="column-content">
+                    <div class="left-column">
+                      {searchItems.map((item) => {
+                        return (
+                          <a class="search-item" href={item.link}>
+                            <div class="title">{item.title}</div>
+                            <div class="label">{item.label}</div>
+                          </a>
+                        )
+                      })}
+                    </div>
+                    <div class="right-column">
+                      <a class="browseAll" href="https://www.nexarc.in/all-list/">Browse All</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
           </nav>
         </div>
       </header>

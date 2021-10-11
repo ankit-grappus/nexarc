@@ -1,8 +1,12 @@
+import iconFb from "../../static/assets/images/social/icon-fb.svg";
+import iconTwitter from "../../static/assets/images/social/icon-twitter.svg";
+import iconLinkedin from "../../static/assets/images/social/icon-linkedin.svg"
+
 // company routes
 export const companyRoutes = [
   {
     link: "https://www.nexarc.in/about-us/",
-    routeName: "About us"
+    routeName: "About Tata Business Hub"
   },
   {
     link: "#",
@@ -10,35 +14,51 @@ export const companyRoutes = [
   },
   {
     link: "#",
-    routeName: "Sitemap"
+    routeName: "Upcoming Features"
   },
   {
     link: "#",
-    routeName: "Contact us"
+    routeName: "Sitemap"
+  },
+]
+
+// contact us
+export const contactUs = [
+  {
+    link: "tel:+91-902-211-2299",
+    routeName: "Call Us: +91-902-211-2299"
+  },
+  {
+    link: "mailto:support@nexarc.in",
+    routeName: "Mail: support@nexarc.in"
+  },
+  {
+    link: "https://wa.me/919022338000/?text=Hi Nexarc, Whatsup",
+    routeName: "WhatsApp: +91-902-233-8000"
   },
 ]
 
 // legal routes
 export const legalRoutes = [
   {
-    link: "https://www.nexarc.in/privacy-and-terms/",
-    routeName: "Privacy policy"
-  },
-  {
-    link: "https://www.nexarc.in/privacy-and-terms/",
-    routeName: "Terms & conditions"
+    link: "https://www.nexarc.in/support/",
+    routeName: "Support services"
   },
   {
     link: "https://www.nexarc.in/software-used/",
     routeName: "Softwares used"
   },
   {
-    link: "https://www.nexarc.in/support/",
-    routeName: "Support services"
-  },
-  {
     link: "https://www.nexarc.in/copy-right-infringement/",
     routeName: "Report copyright infringement"
+  },
+  {
+    link: "https://www.nexarc.in/privacy-and-terms/",
+    routeName: "Privacy & Terms"
+  },
+  {
+    link: "#",
+    routeName: "Cookie Policy"
   },
 ]
 
@@ -87,16 +107,16 @@ export const getSolutionsRoutes = [
 ]
 
 // Find Experts routes
-export const findExpertsRoutes = [
-  {
-    link: "#",
-    routeName: "nexTalks"
-  },
-  {
-    link: "#",
-    routeName: "nexConsult"
-  },
-]
+// export const findExpertsRoutes = [
+//   {
+//     link: "#",
+//     routeName: "nexTalks"
+//   },
+//   {
+//     link: "#",
+//     routeName: "nexConsult"
+//   },
+// ]
 
 // Get Skilled routes
 export const getSkilledRoutes = [
@@ -111,5 +131,28 @@ export const stayUpdatedRoutes = [
   {
     link: "https://www.nexarc.in/insights/",
     routeName: "Info Hub"
+  },
+  {
+    link: "#",
+    routeName: "nexTalks"
+  },
+]
+
+// social media icons
+export const socialIcons = [
+  {
+    link: "#",
+    socialSrc: iconFb,
+    alt: "facebook icon"
+  },
+  {
+    link: "#",
+    socialSrc: iconLinkedin,
+    alt: "linkedin icon"
+  },
+  {
+    link: "#",
+    socialSrc: iconTwitter,
+    alt: "twitter icon"
   },
 ]

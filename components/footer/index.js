@@ -1,7 +1,7 @@
 // styles
 import "./styles.scss";
 
-import { companyRoutes, legalRoutes, getSolutionsRoutes, getFinancingRoutes, findOpportunitiesRoutes, findExpertsRoutes, getSkilledRoutes, stayUpdatedRoutes } from "./footerRoute"
+import { companyRoutes, contactUs, legalRoutes, getSolutionsRoutes, findOpportunitiesRoutes, getSkilledRoutes, stayUpdatedRoutes, socialIcons } from "./footerRoute"
 
 function Footer() {
 
@@ -40,6 +40,16 @@ function Footer() {
                 ))}
               </ul>
             </div>
+            <div className="footer-route-box">
+              <div className="route-heading">Contact Us</div>
+              <ul className="route-ul">
+                {contactUs.map((route, index) => (
+                  <li className="route-li" key={index}>
+                    <a className="link" href={route.link} target="_blank">{route.routeName}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="footer-bottom--block">
             <div className="footer-route-box">
@@ -72,7 +82,7 @@ function Footer() {
                 ))}
               </ul>
             </div>
-            <div className="footer-route-box">
+            {/* <div className="footer-route-box">
               <div className="route-heading">Find Experts</div>
               <ul className="route-ul">
                 {findExpertsRoutes.map((route, index) => (
@@ -81,7 +91,7 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
             <div className="footer-route-box">
               <div className="route-heading">Get Skilled</div>
               <ul className="route-ul">
@@ -103,7 +113,21 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="copyright-text">{`© ${currentYear()} Rights reserved by nexarc`}</div>
+          <div className="copyright-box">
+            <div className="copyright-text">{`© ${currentYear()} Tata Business Hub Limited. All Rights Reserved`}</div>
+            <div className="address-text">148, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400001</div>
+            <ul className="social-connect-box">
+              {socialIcons.map((item) => {
+                return (
+                  <li className="item">
+                    <a href={item.link} className="link" target="_blank">
+                      <img className="icon" src={item.socialSrc} alt={item.alt} />
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </footer>
     </>
