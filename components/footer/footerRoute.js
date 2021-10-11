@@ -1,3 +1,6 @@
+import iconTelephone from "../../static/assets/images/icons/icon-telephone.svg";
+import iconEnvelope from "../../static/assets/images/icons/icon-envelope.svg";
+import iconWhatsapp from "../../static/assets/images/icons/icon-whatsapp.svg";
 import iconFb from "../../static/assets/images/social/icon-fb.svg";
 import iconTwitter from "../../static/assets/images/social/icon-twitter.svg";
 import iconLinkedin from "../../static/assets/images/social/icon-linkedin.svg"
@@ -25,16 +28,22 @@ export const companyRoutes = [
 // contact us
 export const contactUs = [
   {
+    contactUsIcon: iconTelephone,
+    iconTitle: "Call",
     link: "tel:+91-902-211-2299",
-    routeName: "Call Us: +91-902-211-2299"
+    routeName: "+91-902-211-2299"
   },
   {
+    contactUsIcon: iconEnvelope,
+    iconTitle: "Mail",
     link: "mailto:support@nexarc.in",
-    routeName: "Mail: support@nexarc.in"
+    routeName: "support@nexarc.in"
   },
   {
+    contactUsIcon: iconWhatsapp,
+    iconTitle: "Whatsapp",
     link: "https://wa.me/919022338000/?text=Hi Nexarc, Whatsup",
-    routeName: "WhatsApp: +91-902-233-8000"
+    routeName: "+91-902-233-8000"
   },
 ]
 

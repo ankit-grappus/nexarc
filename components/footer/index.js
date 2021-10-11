@@ -45,6 +45,7 @@ function Footer() {
               <ul className="route-ul">
                 {contactUs.map((route, index) => (
                   <li className="route-li" key={index}>
+                    <img className="contactus-icon mr--10" src={route.contactUsIcon} alt={route.contactUsAlt} title={route.iconTitle} />
                     <a className="link" href={route.link} target="_blank">{route.routeName}</a>
                   </li>
                 ))}
