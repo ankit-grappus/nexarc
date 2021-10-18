@@ -6,6 +6,7 @@ class AppDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <link rel="canonical" href="https://www.nexarc.in/" />
           <title>Welcome to Nexarc</title>
           <meta name="description" content="nexarc (a Tata enterprise) is a digital growth platform that enables emerging businesses to grow, solve challenges and optimize processes." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,6 +29,22 @@ class AppDocument extends Document {
           <meta property="og:image:type" content="images/png" />
           <meta property="og:description"
             content="nexarc (a Tata enterprise) is a digital growth platform that enables emerging businesses to grow, solve challenges and optimize processes." />
+          
+          {/* <!--FB Sharing Tags--> */}
+          <meta property="og:title" content="Grow, solve, optimize your business | nexarc (a Tata Enterprise)" />
+          <meta property="og:description" content="The one-stop B2B digital platform for emerging businesses in India to grow, find opportunities, network and solve key challenges, with trusted applications, solutions and services." />
+          <meta property="og:image" content="https://www.nexarc.in/nexarc/static/appcode/images/NexarcLogo.jpg" />
+          <meta property="og:url" content="https://www.nexarc.in/" />
+          {/* <!-- end fb sharing tags--> */}
+
+          {/* <!--twitter tags--> */}
+
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content="Grow, solve, optimize your business | nexarc (a Tata Enterprise)"/>
+          <meta name="twitter:description" content="The one-stop B2B digital platform for emerging businesses in India to grow, find opportunities, network and solve key challenges, with trusted applications, solutions and services."/>
+          <meta name="twitter:image"  content="https://www.nexarc.in/nexarc/static/appcode/images/NexarcLogo.jpg"/>
+          <meta property="og:url" content="https://www.nexarc.in/" />
+          {/* <!-- end twitter tags--> */}
         </Head>
         <body>
           <Main></Main>

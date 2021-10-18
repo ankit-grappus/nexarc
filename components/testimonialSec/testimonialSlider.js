@@ -12,14 +12,24 @@ function TestimonialSlider() {
   // const media = window.matchMedia(`(max-width: 1024px)`);
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
+  const [testimonialData, setTestimonialData] = useState([])
 
   const slider1 = useRef();
   const slider2 = useRef();
 
+  const fetchTestimonials = async () => {
+    const response = await fetch('https://www.nexarc.in/per/g04/pub/2190/iONAppsHub/instance/staticpages/front-end/static-appcode/api/grappus-api/homepage.json');
+    const data = await response.json();
+    setTestimonialData(data)
+    
+  }
   useEffect(() => {
     setNav1(slider1);
     setNav2(slider2);
+    fetchTestimonials();
   }, []);
+
+  console.log("testing",testimonialData)
 
   var settings = {
     // dots: (media.matches === true ? true : null),
