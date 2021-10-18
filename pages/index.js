@@ -6,6 +6,7 @@ import CreateAndFindSec from '../components/createAndFindSec'
 import TestimonialSec from '../components/testimonialSec'
 import RegisterNowSec from '../components/registerNowSec'
 import Footer from '../components/footer'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         heading="Join the nexarc community of emerging businesses"
       />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
