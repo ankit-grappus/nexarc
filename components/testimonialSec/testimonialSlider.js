@@ -17,19 +17,19 @@ function TestimonialSlider() {
   const slider1 = useRef();
   const slider2 = useRef();
 
-  const fetchTestimonials = async () => {
-    const response = await fetch('https://www.nexarc.in/per/g04/pub/2190/iONAppsHub/instance/staticpages/front-end/static-appcode/api/grappus-api/homepage.json');
-    const data = await response.json();
-    setTestimonialData(data)
+  // const fetchTestimonials = async () => {
+  //   const response = await fetch('https://www.nexarc.in/per/g04/pub/2190/iONAppsHub/instance/staticpages/front-end/static-appcode/api/grappus-api/homepage.json');
+  //   const data = await response.json();
+  //   setTestimonialData(data)
     
-  }
+  // }
   useEffect(() => {
     setNav1(slider1);
     setNav2(slider2);
-    fetchTestimonials();
+    // fetchTestimonials();
   }, []);
 
-  console.log("testing",testimonialData)
+  // console.log("testing",testimonialData)
 
   var settings = {
     // dots: (media.matches === true ? true : null),
