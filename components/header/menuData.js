@@ -1,14 +1,17 @@
 export const menuItem = [
   {
     menuTitle: "Find Opportunities",
+    eventClickHeader:"NXA_HM_HEAD_FO",
     submenu: [
       {
         title: "Tender & Quotations",
-        submenuLink: "https://www.nexarc.in/tender-and-quotations/"
+        submenuLink: "https://www.nexarc.in/tender-and-quotations/",
+        eventClickName:"NXA_HM_HEAD_FO_TNQ"
       },
       {
         title: "Business Connections",
-        submenuLink: "https://www.nexarc.in/business/"
+        submenuLink: "https://www.nexarc.in/business/",
+        eventClickName:"NXA_HM_HEAD_FO_BIZ"
       },
       // {
       //   title: "Get Tata Verified",
@@ -18,10 +21,12 @@ export const menuItem = [
   },
   {
     menuTitle: "Get Solutions",
+    eventClickHeader:"NXA_HM_HEAD_SOL",
     submenu: [
       {
         title: "Apps & Solutions",
-        submenuLink: "https://www.nexarc.in/product-services/"
+        submenuLink: "https://www.nexarc.in/product-services/",
+        eventClickName:"NXA_HM_HEAD_SOL_APP"
       },
       // {
       //   title: "Manage services",
@@ -61,23 +66,28 @@ export const menuItem = [
   // },
   {
     menuTitle: "Get Skilled",
+    eventClickHeader:"NXA_HM_HEAD_SKILL",
     submenu: [
       {
         title: "nexLearn",
-        submenuLink: "https://www.nexarc.in/learning/"
+        submenuLink: "https://www.nexarc.in/learning/",
+        eventClickName:"NXA_HM_HEAD_SKILL_NEXLEARN"
       },
     ]
   },
   {
     menuTitle: "Stay Updated",
+    eventClickHeader:"NXA_HM_HEAD_UPDATE",
     submenu: [
       {
         title: "Info Hub",
-        submenuLink: "https://www.nexarc.in/insights/"
+        submenuLink: "https://www.nexarc.in/insights/",
+        eventClickName:"NXA_HM_HEAD_UPDATE_INFOHUB"
       },
       {
         title: "nexTalks",
-        submenuLink: "#"
+        submenuLink: "#",
+        eventClickName:"NXA_HM_HEAD_UPDATE_INFOHUB"
       },
     ]
   },

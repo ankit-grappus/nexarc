@@ -3,17 +3,20 @@ export const tab1Content = [
   {
     link: "https://www.nexarc.in/tender-and-quotations/",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/1.png",
-    itemName: "View latest tenders"
+    itemName: "View latest tenders",
+    nxClickEvent:"NXA_WAYLF_VIEW"
   },
   {
     link: "https://www.nexarc.in/business/",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/2.png",
-    itemName: "Connect with businesses"
+    itemName: "Connect with businesses",
+    nxClickEvent:"NXA_WAYLF_CONNECT"
   },
   {
     link: "#",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/3.png",
-    itemName: "Get Tata verified"
+    itemName: "Get Tata verified",
+    nxClickEvent:"NXA_WAYLF_GET"
   }
 ]
 
@@ -22,17 +25,20 @@ export const tab2Content = [
   {
     link: "https://www.nexarc.in/apps-and-solutions/",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/1.png",
-    itemName: "Find productivity software"
+    itemName: "Find productivity software",
+    nxClickEvent:""
   },
   {
     link: "#",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/2.png",
-    itemName: "Get one-on-one growth advice"
+    itemName: "Get one-on-one growth advice",
+    nxClickEvent:""
   },
   {
     link: "#",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/3.png",
-    itemName: "Find financial solutions"
+    itemName: "Find financial solutions",
+    nxClickEvent:""
   }
 ]
 
@@ -41,17 +47,20 @@ export const tab3Content = [
   {
     link: "#",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab3/1.png",
-    itemName: "Hear from industry experts"
+    itemName: "Hear from industry experts",
+    nxClickEvent:""
   },
   {
     link: "#",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab3/2.png",
-    itemName: "Get business news & tips"
+    itemName: "Get business news & tips",
+    nxClickEvent:""
   },
   {
     link: "https://www.nexarc.in/learning/",
     itemImg: "https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab3/3.png",
-    itemName: "Find courses to enhance skills"
+    itemName: "Find courses to enhance skills",
+    nxClickEvent:""
   }
 ]
 

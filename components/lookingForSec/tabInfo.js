@@ -9,6 +9,7 @@ export const navItems = [
       <NavHeading
         icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
         tabName="Grow your business"
+        nxEventClick="NXA_WAYLF_GROW"
       />,
   },
   {
@@ -16,6 +17,7 @@ export const navItems = [
       <NavHeading
         icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
         tabName="Improve business operations"
+        nxEventClick="NXA_WAYLF_IMPROVE"
       />,
   },
   {
@@ -23,6 +25,7 @@ export const navItems = [
       <NavHeading
         icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/icon.svg"
         tabName="Learn & stay updated"
+        nxEventClick="NXA_WAYLF_LEARN"
       />,
   },
 ]

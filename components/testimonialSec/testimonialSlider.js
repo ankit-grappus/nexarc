@@ -75,6 +75,7 @@ function TestimonialSlider() {
                             buttonName="Try now"
                             className="try-now-btn transparent-btn btn-lg"
                             btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-dark.svg"
+                            nx-click-event={item.nxClickEvent}
                           />
                         </div>
                       </div>
@@ -100,7 +101,7 @@ function TestimonialSlider() {
         {nexaCustomerData.map((data, index) => {
           return (
             <>
-              <div key={index} className="slider-thumbnail-block">
+              <div key={index} className="slider-thumbnail-block" nx-click-event={data.nxClickEventBox}>
                 <div className="thumbnail-content fx fx--ai-c">
                   <div className="user-img-box mr--20">
                     <img className="user-img" src={data.image} alt="user icon" width="52" height="52" />

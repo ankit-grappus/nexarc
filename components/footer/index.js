@@ -24,7 +24,7 @@ function Footer() {
               <div className="route-heading">Company</div>
               <ul className="route-ul">
                 {companyRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -34,7 +34,7 @@ function Footer() {
               <div className="route-heading">Legal Routes</div>
               <ul className="route-ul">
                 {legalRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -44,7 +44,7 @@ function Footer() {
               <div className="route-heading">Contact Us</div>
               <ul className="route-ul">
                 {contactUs.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <img className="contactus-icon mr--10" src={route.contactUsIcon} alt={route.contactUsAlt} title={route.iconTitle} />
                     <a className="link" href={route.link} target="_blank">{route.routeName}</a>
                   </li>
@@ -57,7 +57,7 @@ function Footer() {
               <div className="route-heading">Find Opportunities</div>
               <ul className="route-ul">
                 {findOpportunitiesRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -77,7 +77,7 @@ function Footer() {
               <div className="route-heading">Get Solutions</div>
               <ul className="route-ul">
                 {getSolutionsRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -97,7 +97,7 @@ function Footer() {
               <div className="route-heading">Get Skilled</div>
               <ul className="route-ul">
                 {getSkilledRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -107,7 +107,7 @@ function Footer() {
               <div className="route-heading">Stay Updated</div>
               <ul className="route-ul">
                 {stayUpdatedRoutes.map((route, index) => (
-                  <li className="route-li" key={index}>
+                  <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
                     <a className="link" href={route.link}>{route.routeName}</a>
                   </li>
                 ))}
@@ -121,7 +121,7 @@ function Footer() {
               {socialIcons.map((item) => {
                 return (
                   <li className="item">
-                    <a href={item.link} className="link" target="_blank">
+                    <a href={item.link} className="link" target="_blank" nx-click-event={item.nxClickEvent}>
                       <img className="icon" src={item.socialSrc} alt={item.alt} />
                     </a>
                   </li>

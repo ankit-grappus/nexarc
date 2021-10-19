@@ -26,8 +26,8 @@ function Header() {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg">
             <div className="navbar-brand">
-              <Link href="/">
-                <img className="logo" src="../../static/assets/images/logo-nexarc.svg" alt="nexarc logo" width="137" height="33" />
+              <Link href="/" nx-click-event ="NXA_HM_HEAD_NEXARCICON">
+                <img className="logo" src="../../static/assets/images/logo-nexarc.svg" alt="nexarc logo" width="137" height="33" nx-click-event ="NXA_HM_HEAD_NEXARCICON" />
               </Link>
             </div>
             <button
@@ -45,21 +45,28 @@ function Header() {
               </ul>
 
               <div className="nav-right fx fx--ai-c">
-                <PrimaryButton
-                  className="login-btn btn-sm ml--10"
-                  buttonName="Login"
-                  onClick={() => Router.push("https://www.nexarc.in/login//")}
-                />
-                <PrimaryButton
-                  className="primary btn-sm register-btn ml--10 mr--10"
-                  buttonName="Register Now"
-                  onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
-                />
+                <div nx-click-event="NXA_HM_HEAD_LOGIN">
+                  <PrimaryButton
+                    className="login-btn btn-sm ml--10"
+                    buttonName="Login"
+                    onClick={() => Router.push("https://www.nexarc.in/login//")}
+                    nx-click-event="NXA_HM_HEAD_LOGIN"
+                  />
+                </div>
+                <div nx-click-event="NXA_HM_HEAD_REGISTER">
+                  <PrimaryButton
+                    className="primary btn-sm register-btn ml--10 mr--10"
+                    buttonName="Register Now"
+                    onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
+                    nx-click-event="NXA_HM_HEAD_REGISTER"
+                  />
+                </div>
+                
                 <img className="logo" src="../../static/assets/images/logo-tata.svg" alt="tata logo" width="32" height="30" />
               </div>
             </div>
 
-            <div className="search-main-box" onClick={() => expandSearch()}>
+            <div className="search-main-box" onClick={() => expandSearch()} nx-click-event="NXA_HM_SEARCH">
               <div className="search-box">
                 <img className="search-icon" src="../../static/assets/images/icons/icon-search-dark.svg" alt="search icon" width="14" height="14" />
               </div>
