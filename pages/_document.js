@@ -24,7 +24,31 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head></Head>
+        <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+             __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type" : "Organization",
+                  "Name" : "nexarc",
+                  "URL" : "https://www.nexarc.in",
+                  "contactPoint" : [{
+                                      "@type" : "ContactPoint",
+                                      "telephone" : "+91-902-211-2299",
+                                      "contactType" : "Customer Service"
+                                    }],
+                  "logo" : " https://www.nexarc.in/nexarc/static/appcode/images/NexarcLogo.jpg ",
+                  "sameAs" : [  "https://www.facebook.com/nexarcin",
+                                "https://www.twitter.com/nexarcin",
+                                "https://in.linkedin.com/company/nexarcin",
+                                "https://www.instagram.com/nexarcin/",
+                                "https://www.youtube.com/c/nexarcin"
+                              ]
+                  }) 
+            }}
+        />
+        </Head>
         <body>
           <Main />
           <NextScript />
