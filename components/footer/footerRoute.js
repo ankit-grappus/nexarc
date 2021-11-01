@@ -1,31 +1,33 @@
 import iconTelephone from "../../static/assets/images/icons/icon-telephone.svg";
 import iconEnvelope from "../../static/assets/images/icons/icon-envelope.svg";
 import iconWhatsapp from "../../static/assets/images/icons/icon-whatsapp.svg";
-import iconFb from "../../static/assets/images/social/icon-fb.svg";
-import iconTwitter from "../../static/assets/images/social/icon-twitter.svg";
-import iconLinkedin from "../../static/assets/images/social/icon-linkedin.svg"
+import iconFb from "../../static/assets/images/social/icon-fb.png";
+import iconInstagram from "../../static/assets/images/social/icon-instagram.png";
+import iconYoutube from "../../static/assets/images/social/icon-youtube.png";
+import iconTwitter from "../../static/assets/images/social/icon-twitter.png";
+import iconLinkedin from "../../static/assets/images/social/icon-linkedin.png"
 
 // company routes
 export const companyRoutes = [
   {
     link: "https://www.nexarc.in/about-us/",
     routeName: "About Tata Business Hub",
-    nxClickEvent:"NXA_FT_COM_ABOUT"
+    nxClickEvent: "NXA_FT_COM_ABOUT"
   },
   {
     link: "#",
     routeName: "Careers",
-    nxClickEvent:"NXA_FT_COM_CAREER"
+    nxClickEvent: "NXA_FT_COM_CAREER"
   },
   {
     link: "#",
     routeName: "Upcoming Features",
-    nxClickEvent:"NXA_FT_COM_FEATURE"
+    nxClickEvent: "NXA_FT_COM_FEATURE"
   },
   {
     link: "#",
     routeName: "Sitemap",
-    nxClickEvent:"NXA_FT_COM_SITEMAP"
+    nxClickEvent: "NXA_FT_COM_SITEMAP"
   },
 ]
 
@@ -36,21 +38,21 @@ export const contactUs = [
     iconTitle: "Call",
     link: "tel:+91-902-211-2299",
     routeName: "+91-902-211-2299",
-    nxClickEvent:"NXA_FT_CONTACT_CALL"
+    nxClickEvent: "NXA_FT_CONTACT_CALL"
   },
   {
     contactUsIcon: iconEnvelope,
     iconTitle: "Mail",
     link: "mailto:support@nexarc.in",
     routeName: "support@nexarc.in",
-    nxClickEvent:"NXA_FT_CONTACT_EMAIL"
+    nxClickEvent: "NXA_FT_CONTACT_EMAIL"
   },
   {
     contactUsIcon: iconWhatsapp,
-    iconTitle: "Whatsapp",
+    iconTitle: "WhatsApp",
     link: "https://wa.me/919022338000/?text=Hi Nexarc, Whatsup",
     routeName: "+91-902-233-8000",
-    nxClickEvent:"NXA_FT_CONTACT_WHATSAPP"
+    nxClickEvent: "NXA_FT_CONTACT_WHATSAPP"
   },
 ]
 
@@ -59,27 +61,27 @@ export const legalRoutes = [
   {
     link: "https://www.nexarc.in/support/",
     routeName: "Support services",
-    nxClickEvent:"NXA_FT_LEGAL_SUPPORT"
+    nxClickEvent: "NXA_FT_LEGAL_SUPPORT"
   },
   {
     link: "https://www.nexarc.in/software-used/",
     routeName: "Softwares used",
-    nxClickEvent:"NXA_FT_LEGAL_SOFTWARE"
+    nxClickEvent: "NXA_FT_LEGAL_SOFTWARE"
   },
   {
     link: "https://www.nexarc.in/copy-right-infringement/",
     routeName: "Report copyright infringement",
-    nxClickEvent:"NXA_FT_LEGAL_COPYRIGHT"
+    nxClickEvent: "NXA_FT_LEGAL_COPYRIGHT"
   },
   {
     link: "https://www.nexarc.in/privacy-and-terms/",
     routeName: "Privacy & Terms",
-    nxClickEvent:"NXA_FT_LEGAL_PRIVACY"
+    nxClickEvent: "NXA_FT_LEGAL_PRIVACY"
   },
   {
     link: "#",
     routeName: "Cookie Policy",
-    nxClickEvent:"NXA_FT_LEGAL_COOKIE"
+    nxClickEvent: "NXA_FT_LEGAL_COOKIE"
   },
 ]
 
@@ -88,12 +90,12 @@ export const findOpportunitiesRoutes = [
   {
     link: "https://www.nexarc.in/tender-and-quotations/",
     routeName: "Tenders & Quotations",
-    nxClickEvent:"NXA_FT_OPP_TENDER"
+    nxClickEvent: "NXA_FT_OPP_TENDER"
   },
   {
     link: "https://www.nexarc.in/business/",
     routeName: "Business Connections",
-    nxClickEvent:"NXA_FT_OPP_BIZ"
+    nxClickEvent: "NXA_FT_OPP_BIZ"
   },
   // {
   //   link: "#",
@@ -106,17 +108,17 @@ export const getFinancingRoutes = [
   {
     link: "#",
     routeName: "Credit Cards",
-    nxClickEvent:""
+    nxClickEvent: ""
   },
   {
     link: "#",
     routeName: "Business Loans",
-    nxClickEvent:""
+    nxClickEvent: ""
   },
   {
     link: "#",
     routeName: "Bill Discounting",
-    nxClickEvent:""
+    nxClickEvent: ""
   },
 ]
 
@@ -125,7 +127,7 @@ export const getSolutionsRoutes = [
   {
     link: "https://www.nexarc.in/product-services/",
     routeName: "Apps & Solutions",
-    nxClickEvent:"NXA_FT_SOL_APP"
+    nxClickEvent: "NXA_FT_SOL_APP"
   },
   // {
   //   link: "#",
@@ -150,7 +152,7 @@ export const getSkilledRoutes = [
   {
     link: "https://www.nexarc.in/learning/",
     routeName: "nexLearn",
-    nxClickEvent:"NXA_FT_SKILL_NEXLEARN"
+    nxClickEvent: "NXA_FT_SKILL_NEXLEARN"
   },
 ]
 
@@ -159,12 +161,12 @@ export const stayUpdatedRoutes = [
   {
     link: "https://www.nexarc.in/insights/",
     routeName: "Info Hub",
-    nxClickEvent:"NXA_FT_UPDATE_INFOHUB"
+    nxClickEvent: "NXA_FT_UPDATE_INFOHUB"
   },
   {
     link: "#",
     routeName: "nexTalks",
-    nxClickEvent:"NXA_FT_UPDATE_NEXTALKS"
+    nxClickEvent: "NXA_FT_UPDATE_NEXTALKS"
   },
 ]
 
@@ -174,18 +176,30 @@ export const socialIcons = [
     link: "#",
     socialSrc: iconFb,
     alt: "facebook icon",
-    nxClickEvent:"NXA_FT_ICON_FB"
+    nxClickEvent: "NXA_FT_ICON_FB"
+  },
+  {
+    link: "#",
+    socialSrc: iconInstagram,
+    alt: "instagram icon",
+    nxClickEvent: "NXA_FT_ICON_INSTA"
   },
   {
     link: "#",
     socialSrc: iconLinkedin,
     alt: "linkedin icon",
-    nxClickEvent:"NXA_FT_ICON_LKD"
+    nxClickEvent: "NXA_FT_ICON_LKD"
+  },
+  {
+    link: "#",
+    socialSrc: iconYoutube,
+    alt: "youtube icon",
+    nxClickEvent: "NXA_FT_ICON_YT"
   },
   {
     link: "#",
     socialSrc: iconTwitter,
     alt: "twitter icon",
-    nxClickEvent:"NXA_FT_ICON_TWT"
+    nxClickEvent: "NXA_FT_ICON_TWT"
   },
 ]
