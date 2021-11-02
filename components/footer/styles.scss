@@ -2,7 +2,6 @@
 @import "../../styles/variables/mixins";
 
 .footer-container {
-  .footer-logo--block,
   .footer-top--block,
   .footer-bottom--block {
     padding: 30px 0px;
@@ -12,8 +11,8 @@
   }
 
   .footer-top--block {
-    border-top: 2px solid $border-color;
-    border-bottom: 2px solid $border-color;
+    // border-top: 2px solid $border-color;
+    // border-bottom: 2px solid $border-color;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
@@ -114,14 +113,7 @@
   }
 
   .copyright-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 24px;
-    color: $gray-4d;
-    padding: 30px 0px;
+    padding: 30px 0px 150px;
     border-top: 2px solid $border-color;
 
     @include tablet {
@@ -131,27 +123,54 @@
     @include mobile {
       flex-direction: column;
       text-align: center;
+      padding-bottom: 75px;
+    }
+  }
+  .copyright-top--block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 30px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .copyright-bottom--block {
+    @extend .copyright-top--block;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $gray-4d;
+
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      flex-direction: column;
     }
   }
   .copyright-text {
-    @include tablet {
-      order: 3;
-    }
+    // @include tablet {
+    //   order: 3;
+    // }
     @include mobile {
-      order: 3;
+      order: 2;
+      padding-top: 20px;
     }
   }
   .address-text {
-    margin: 0 20px;
+    // margin: 0 20px;
 
-    @include tablet {
-      margin: 20px 0px;
-      order: 2;
-    }
-    @include mobile {
-      margin: 20px 0px;
-      order: 2;
-    }
+    // @include tablet {
+    //   margin: 20px 0px;
+    //   order: 2;
+    // }
+    // @include mobile {
+    //   margin: 20px 0px;
+    //   order: 2;
+    // }
   }
   .social-connect-box {
     display: inline-flex;
@@ -160,16 +179,19 @@
     padding: 0;
     margin: 0;
 
-    @include tablet {
-      order: 1;
-    }
+    // @include tablet {
+    //   order: 1;
+    // }
     @include mobile {
-      order: 1;
+      padding-top: 30px;
     }
     .item {
       & + .item {
         margin-left: 10px;
       }
+    }
+    .link {
+      display: block;
     }
   }
 }

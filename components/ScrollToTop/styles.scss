@@ -1,7 +1,41 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
 .scroll-to-top {
-    position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    animation: fadeIn 700ms ease-in-out 1s both;
-    cursor: pointer;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  z-index: 999;
+  background: $white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-shadow: 0px 3px 16px rgba($black, 0.06);
+
+  @include tablet {
+    width: 75px;
+    height: 75px;
   }
+  @include mobile {
+    width: 60px;
+    height: 60px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .icon {
+    object-fit: cover;
+    transform: scale(1.25);
+
+    @include tablet {
+      transform: scale(0.75);
+    }
+    @include mobile {
+      transform: scale(0.75);
+    }
+  }
+}

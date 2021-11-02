@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // styles
 import "./styles.scss"
+import iconGoToTop from "../../static/assets/images/go-to-top.svg"
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,7 +9,8 @@ export default function ScrollToTop() {
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setIsVisible(true);
-    } else {
+    }
+    else {
       setIsVisible(false);
     }
   };
@@ -24,15 +26,16 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="scroll-to-top">
+    <>
       {isVisible && (
-        <div onClick={scrollToTop}>
+        <div className="scroll-to-top" onClick={scrollToTop}>
           <img
-            src="https://i.postimg.cc/44Ytsk8Z/top-arrow-emoj.png"
+            className="icon"
+            src={iconGoToTop}
             alt="Go to top"
           />
         </div>
       )}
-    </div>
+    </>
   );
 }
