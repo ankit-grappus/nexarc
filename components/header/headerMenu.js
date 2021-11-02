@@ -30,20 +30,20 @@ function HeaderMenu() {
             >
               {!item.link &&
                 <>
-                  <div className="nav-link" nx-click-event={item.eventClickHeader}>
+                  <h2 className="nav-link" nx-click-event={item.eventClickHeader}>
                     {item.menuTitle}
                     <img className={`dropdown-icon ${menuDropdown && index === dropdownItem ? "rotate" : ""}`} src="../../static/assets/images/icons/chevron-left.svg" alt="icon" width="12" height="12" nx-click-event={item.eventClickHeader}/>
-                  </div>
+                  </h2>
                   {menuDropdown && index === dropdownItem &&
                     <>
                       {/* <div className="menu-fixed-layer" onClick={fixedLayerCloseMenu}></div> */}
-                      <div className="submenu">
+                      <h3 className="submenu">
                         {item.submenu.map((menuItem, index) => {
                           return (
                             <a key={index} className="submenu-link" href={menuItem.submenuLink} nx-click-event={menuItem.eventClickName}>{menuItem.title}</a>
                           )
                         })}
-                      </div>
+                      </h3>
                     </>
                   }
                 </>

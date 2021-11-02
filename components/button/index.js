@@ -3,7 +3,7 @@ import "./styles.scss";
 
 function PrimaryButton({ className, onClick, disabled, type, buttonName, btnLeftIcon, btnRightIcon }) {
   return (
-    <>
+    <h2>
       <button
         className={`button ${className}`}
         onClick={onClick}
@@ -18,7 +18,7 @@ function PrimaryButton({ className, onClick, disabled, type, buttonName, btnLeft
           <img className="btnIcon right" src={btnRightIcon} alt="icon" width="12" height="12" />
         }
       </button>
-    </>
+    </h2>
   )
 }
 export default PrimaryButton;

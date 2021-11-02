@@ -7,7 +7,7 @@ function TestimonialSec() {
   return (
     <>
       <div className="testimonial--sec">
-        <div className="heading">Hear from our customers</div>
+        <h1 className="heading">Hear from our customers</h1>
         <TestimonialSlider />
       </div>
     </>

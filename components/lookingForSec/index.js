@@ -7,7 +7,7 @@ function LookingForSec({ secHeading }) {
   return (
     <>
       <div className="looking-for-block">
-        <div className="heading">{secHeading}</div>
+        <h1 className="heading">{secHeading}</h1>
         <div className="vertical-navbar-box">
           <Tab.Container id="left-tabs-example" defaultActiveKey={0}>
             <Row>

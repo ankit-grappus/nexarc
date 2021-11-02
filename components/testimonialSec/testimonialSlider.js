@@ -67,9 +67,9 @@ function TestimonialSlider() {
                     </div>
                     <div className="col-12 col-lg-5">
                       <div className="testimonial-content">
-                        <div className="message">{item.quote}</div>
-                        <div className="user-name">{item.name}</div>
-                        <div className="user-details">{item.companyLocation}</div>
+                        <h2 className="message">{item.quote}</h2>
+                        <h3 className="user-name">{item.name}</h3>
+                        <h3 className="user-details">{item.companyLocation}</h3>
                         <div className="action-box">
                           <PrimaryButton
                             buttonName="Try now"
@@ -107,8 +107,8 @@ function TestimonialSlider() {
                     <img className="user-img" src={data.image} alt="user icon" width="52" height="52" />
                   </div>
                   <div className="user-details-box">
-                    <div className="username">{data.name}</div>
-                    <div className="user-details">{data.companyName}</div>
+                    <h2 className="username">{data.name}</h2>
+                    <h3 className="user-details">{data.companyName}</h3>
                   </div>
                 </div>
               </div>

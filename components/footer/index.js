@@ -19,9 +19,9 @@ function Footer() {
             <img className="logo" src="../../static/assets/images/logo-nexarc.svg" alt="nexarc logo" width="137" height="33" />
           </div>
           <div className="footer-top--block">
-            <div className="footer-description">nexarc (a Tata enterprise) is a digital growth platform that enables emerging businesses to grow, solve challenges and optimize processes. It offers a range of trusted products, solutions and services to help businesses find new opportunities, get practical tips and expert advice, gain new skills and more.</div>
+            <h3 className="footer-description">nexarc (a Tata enterprise) is a digital growth platform that enables emerging businesses to grow, solve challenges and optimize processes. It offers a range of trusted products, solutions and services to help businesses find new opportunities, get practical tips and expert advice, gain new skills and more.</h3>
             <div className="footer-route-box">
-              <div className="route-heading">Company</div>
+              <h2 className="route-heading">Company</h2>
               <ul className="route-ul">
                 {companyRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -31,7 +31,7 @@ function Footer() {
               </ul>
             </div>
             <div className="footer-route-box">
-              <div className="route-heading">Legal Routes</div>
+              <h2 className="route-heading">Legal Routes</h2>
               <ul className="route-ul">
                 {legalRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -41,7 +41,7 @@ function Footer() {
               </ul>
             </div>
             <div className="footer-route-box">
-              <div className="route-heading">Contact Us</div>
+              <h2 className="route-heading">Contact Us</h2>
               <ul className="route-ul">
                 {contactUs.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -54,7 +54,7 @@ function Footer() {
           </div>
           <div className="footer-bottom--block">
             <div className="footer-route-box">
-              <div className="route-heading">Find Opportunities</div>
+              <h2 className="route-heading">Find Opportunities</h2>
               <ul className="route-ul">
                 {findOpportunitiesRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -74,7 +74,7 @@ function Footer() {
               </ul>
             </div> */}
             <div className="footer-route-box">
-              <div className="route-heading">Get Solutions</div>
+              <h2 className="route-heading">Get Solutions</h2>
               <ul className="route-ul">
                 {getSolutionsRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -94,7 +94,7 @@ function Footer() {
               </ul>
             </div> */}
             <div className="footer-route-box">
-              <div className="route-heading">Get Skilled</div>
+              <h2 className="route-heading">Get Skilled</h2>
               <ul className="route-ul">
                 {getSkilledRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>
@@ -104,7 +104,7 @@ function Footer() {
               </ul>
             </div>
             <div className="footer-route-box">
-              <div className="route-heading">Stay Updated</div>
+              <h2 className="route-heading">Stay Updated</h2>
               <ul className="route-ul">
                 {stayUpdatedRoutes.map((route, index) => (
                   <li className="route-li" key={index} nx-click-event={route.nxClickEvent}>

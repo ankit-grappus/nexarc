@@ -13,7 +13,7 @@ function RegisterNowSec({ heading }) {
         <div className="container-fluid custom">
           <div className="content-box">
             <TataEnterpriseText />
-            <div className="heading text-white">{heading}</div>
+            <h1 className="heading text-white">{heading}</h1>
             <PrimaryButton
               className="register-btn primary btn-lg"
               buttonName="Register Now"

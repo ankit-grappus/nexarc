@@ -10,7 +10,7 @@ function CreateAndFindSec() {
     <>
       <div className="create-find--sec">
         <div className="left-sec section">
-          <div className="heading text-white">Create your online business profile</div>
+          <h1 className="heading text-white">Create your online business profile</h1>
           <div className="btn-box" nx-click-event="NXA_CR2_REG">
             <PrimaryButton
               className="register-btn transparent-btn btn-lg"
@@ -25,7 +25,7 @@ function CreateAndFindSec() {
           </div>
         </div>
         <div className="right-sec section">
-          <div className="heading">Find relevant leads across industries</div>
+          <h1 className="heading">Find relevant leads across industries</h1>
           <div className="btn-box" nx-click-event="NXA_CR2_VIEW">
             <PrimaryButton
               className="find-btn transparent-btn btn-lg"
