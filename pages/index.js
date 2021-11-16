@@ -14,11 +14,11 @@ export default function App() {
       <Header />
       <HeroSliderSec />
       <div className="looking-for--sec">
-        <h1 className="container-fluid custom">
+        <div className="container-fluid custom">
           <LookingForSec
             secHeading="What are you looking for?"
           />
-        </h1>
+        </div>
       </div>
       <CreateAndFindSec />
       <TestimonialSec />
