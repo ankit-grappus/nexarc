@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 1000;
   transition: all 0.3s ease-in-out;
 
   @include mobile {
@@ -146,7 +146,7 @@
       height: calc(100vh - 70px);
       // height: calc(var(--vh, 1vh) * 100);
       z-index: 2;
-      padding: 15px;
+      padding: 0px;
       transition: 0.5s transform ease-in-out;
       transform: translate(-100%, 0%);
       background: $white;
@@ -160,7 +160,7 @@
       height: calc(100vh - 70px);
       // height: calc(var(--vh, 1vh) * 100);
       z-index: 2;
-      padding: 15px;
+      padding: 0px;
       transition: 0.5s transform ease-in-out;
       transform: translate(-100%, 0);
       background: $white;
@@ -169,6 +169,89 @@
     &.show {
       transform: translate(0, 0);
       transition: 0.5s transform ease-in-out;
+      overflow: auto;
+    }
+  }
+
+  .navbar-nav.sm-menu {
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .dropdown-icon {
+        transform: rotate(-180deg);
+        margin: 0;
+      }
+    }
+    .user-block {
+      margin: 0px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .dropdown-icon {
+        transform: rotate(-180deg);
+        margin: 0;
+      }
+    }
+    .user-info-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .user-info-box .user {
+      margin-right: 8px;
+    }
+    .user-info-box .name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 5px;
+      color: $theme-bg;
+      opacity: 0.8;
+    }
+    .user-info-box .designation {
+      font-weight: 300;
+      font-size: 12px;
+      color: $theme-bg;
+      opacity: 0.7;
+    }
+    .myaccount-block {
+      background: rgba(244, 248, 250, 0.48);
+      border-bottom: 1px solid rgba($theme-bg, 0.3);
+      border-radius: 1px;
+    }
+    .activity-block {
+      margin-top: 0;
+    }
+    .logout-block {
+      margin: 15px 15px 30px;
+    }
+    .logout-btn {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $theme-bg;
+      margin: 0;
+      border-color: $theme-bg;
+
+      .arrow-icon {
+        margin-left: 5px;
+      }
+    }
+    .activity-block .menu-heading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $theme-bg;
+      margin-bottom: 15px;
+    }
+
+    .myaccount-block,
+    .activity-block {
+      margin: 15px 15px 0px;
+      padding: 15px 0px;
     }
   }
 
