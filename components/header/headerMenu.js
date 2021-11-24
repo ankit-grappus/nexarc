@@ -30,7 +30,7 @@ function HeaderMenu() {
             >
               {!item.link &&
                 <>
-                  <div className="nav-link" nx-click-event={item.eventClickHeader}>
+                  <div className="nav-link">
                     {item.menuTitle}
                     <img className={`dropdown-icon ${menuDropdown && index === dropdownItem ? "rotate" : ""}`} src="../../static/assets/images/icons/chevron-left.svg" alt="icon" width="12" height="12" nx-click-event={item.eventClickHeader}/>
                   </div>

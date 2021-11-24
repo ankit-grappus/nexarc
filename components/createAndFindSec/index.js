@@ -11,7 +11,7 @@ function CreateAndFindSec() {
       <div className="create-find--sec">
         <div className="left-sec section">
           <h1 className="heading text-white">Create your online business profile</h1>
-          <div className="btn-box" nx-click-event="NXA_CR2_REG">
+          <div className="btn-box">
             <PrimaryButton
               className="register-btn transparent-btn btn-lg"
               buttonName="Register Now"
@@ -20,13 +20,13 @@ function CreateAndFindSec() {
               nx-click-event="NXA_CR2_REG"
             />
           </div>
-          <div className="image-box" nx-click-event="NXA_CR2_REG">
+          <div className="image-box">
             <img className="image" src="../../static/assets/images/man-2.png" alt="image" width="100%" height="100%" />
           </div>
         </div>
         <div className="right-sec section">
           <h1 className="heading">Find relevant leads across industries</h1>
-          <div className="btn-box" nx-click-event="NXA_CR2_VIEW">
+          <div className="btn-box">
             <PrimaryButton
               className="find-btn transparent-btn btn-lg"
               buttonName="View Tenders & Quotations"
@@ -35,7 +35,7 @@ function CreateAndFindSec() {
               nx-click-event="NXA_CR2_VIEW"
             />
           </div>
-          <div className="image-box" nx-click-event="NXA_CR2_VIEW">
+          <div className="image-box">
             <img className="image" src="../../static/assets/images/man-3.png" alt="image" width="100%" height="100%" />
           </div>
         </div>

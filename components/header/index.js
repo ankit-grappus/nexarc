@@ -45,7 +45,7 @@ function Header() {
               </ul>
 
               <div className="nav-right fx fx--ai-c">
-                <div nx-click-event="NXA_HM_HEAD_LOGIN">
+                <div>
                   <PrimaryButton
                     className="login-btn btn-sm ml--10"
                     buttonName="Login"
@@ -53,7 +53,7 @@ function Header() {
                     nx-click-event="NXA_HM_HEAD_LOGIN"
                   />
                 </div>
-                <div nx-click-event="NXA_HM_HEAD_REGISTER">
+                <div>
                   <PrimaryButton
                     className="primary btn-sm register-btn ml--10 mr--10"
                     buttonName="Register Now"
