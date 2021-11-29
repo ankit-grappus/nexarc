@@ -19,7 +19,7 @@ function RegisterNowSec({ heading }) {
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
               onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
-              nx-click-event="NXA_CR4_REG"
+              nxClickEvent="NXA_CR4_REG"
             />
           </div>
           <div className="image-box">

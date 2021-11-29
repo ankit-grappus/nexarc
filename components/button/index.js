@@ -1,7 +1,7 @@
 // styles
 import "./styles.scss";
 
-function PrimaryButton({ className, onClick, disabled, type, buttonName, btnLeftIcon, btnRightIcon }) {
+function PrimaryButton({ className, onClick, disabled, type, buttonName, btnLeftIcon, btnRightIcon,nxClickEvent }) {
   return (
     <>
       <button
@@ -9,6 +9,7 @@ function PrimaryButton({ className, onClick, disabled, type, buttonName, btnLeft
         onClick={onClick}
         disabled={disabled}
         type={type}
+        nx-click-event={nxClickEvent}
       >
         {btnLeftIcon &&
           <img className="btnIcon left" src={btnLeftIcon} alt="icon" width="12" height="12" />

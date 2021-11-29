@@ -17,7 +17,7 @@ function CreateAndFindSec() {
               buttonName="Register Now"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-white.svg"
               onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
-              nx-click-event="NXA_CR2_REG"
+              nxClickEvent="NXA_CR2_REG"
             />
           </div>
           <div className="image-box">
@@ -32,7 +32,7 @@ function CreateAndFindSec() {
               buttonName="View Tenders & Quotations"
               btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-dark.svg"
               onClick={() => Router.push("https://www.nexarc.in/tender-and-quotations//")}
-              nx-click-event="NXA_CR2_VIEW"
+              nxClickEvent="NXA_CR2_VIEW"
             />
           </div>
           <div className="image-box">

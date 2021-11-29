@@ -63,20 +63,20 @@ function Header() {
               }
               {!mobileMenu &&
                 <div className="nav-right fx fx--ai-c">
-                  <div nx-click-event="NXA_HM_HEAD_LOGIN">
+                  <div>
                     <PrimaryButton
                       className="login-btn btn-sm ml--10"
                       buttonName="Login"
                       onClick={() => Router.push("https://www.nexarc.in/login//")}
-                      nx-click-event="NXA_HM_HEAD_LOGIN"
+                      nxClickEvent="NXA_HM_HEAD_LOGIN"
                     />
                   </div>
-                  <div nx-click-event="NXA_HM_HEAD_REGISTER">
+                  <div>
                     <PrimaryButton
                       className="primary btn-sm register-btn ml--10 mr--10"
                       buttonName="Register Now"
                       onClick={() => Router.push("https://www.nexarc.in/sign-up//")}
-                      nx-click-event="NXA_HM_HEAD_REGISTER"
+                      nxClickEvent="NXA_HM_HEAD_REGISTER"
                     />
                   </div>
 

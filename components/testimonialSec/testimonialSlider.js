@@ -75,7 +75,7 @@ function TestimonialSlider() {
                             buttonName="Try now"
                             className="try-now-btn transparent-btn btn-lg"
                             btnRightIcon="../../static/assets/images/icons/icon-rt-arrow-dark.svg"
-                            nx-click-event={item.nxClickEvent}
+                            nxClickEvent={item.nxClickEvent}
                           />
                         </div>
                       </div>
