@@ -1,0 +1,430 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+.banner{
+    width: 100%;
+    height: 75vh;
+    background: rgba(30, 10, 60, 1);
+    @include mobile {
+        // width: 50%;
+        height: auto;
+    }
+    .bannerHeading{
+        color: white;
+        font-size: 49px;
+        position: relative;
+        /* bottom: 2px; */
+        top: 112px;
+        left:80px;
+        @include mobile {
+            // width: 50%;
+            left: 20px;
+            font-size: 30px;
+        }
+    }
+    .bannerSub{
+        color: white;
+        font-size: 14px;
+        position: relative;
+        /* bottom: 2px; */
+        top: 112px;
+        left:80px;
+        font-weight: 200;
+        @include mobile {
+            // width: 50%;
+            left: 20px;
+            font-size: 15px;
+        }
+
+    }
+    .bannerImg{
+        height: 50%;
+        object-fit: contain;
+        width: 50%;
+        position: relative;
+        left: 811px;
+        bottom: 25px;
+        @include mobile {
+            left: 54px;
+            top: 100px;
+            height: 52%;
+            object-fit: scale-down;
+            width: 100%;
+        }
+    }
+    .bannerContent{
+        height: 55%;
+        object-fit: contain;
+        width: 1360px;
+        position: relative;
+        // display: none;
+        @include mobile{
+            display: none;
+            // background: url("../../static/assets/images/mobBanner.png");
+        }
+    }
+    .bannerContentMobile{
+        display: none;
+        @include mobile{
+            display: block;
+            width: 100%;
+            margin-top: 100px;
+            object-fit: contain;
+            height: -webkit-fill-available;
+        }
+    }
+
+}
+
+.BottomContent{
+    width:100%;
+    height:80%;
+    background-color: rgba(255, 255, 255, 1);
+    @include mobile{
+        position: relative;
+        z-index: 3;
+        margin-top: 329px;
+    }
+    .topTrending{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // margin: 60px;
+        @include mobile{
+            background: aliceblue;
+        }
+        .topTrendingSubHeading{
+            opacity: 0.5;
+            font-size: 20px;
+        }
+        .popularTopicHeading{
+            margin-bottom: 25px;
+        }
+        .popularTopic{
+            object-fit: contain;
+            width: 100%;
+            height: 45px;
+            margin: 10px;
+            @include mobile{
+                width: 167%;
+            }
+        }
+    }
+    .imageSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        @include mobile{
+            overflow: auto;
+            overflow-x: scroll;
+            white-space: nowrap;
+            width: 100%;
+            display: -webkit-inline-box 
+        }
+        .imageContent{
+            .bottomImage{
+                object-fit: contain;
+                height: 180px;
+                width: 350.04px;
+            }
+            .bottomText{
+                position: relative;
+                bottom: 27px;
+                left: 21px;
+                color: white;
+            }
+        }
+    }
+    .exploreMore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        .btn{
+            border-radius: 24px;
+            padding: 16px 30px 16px 30px;
+            border-color: #833cff;
+            font-size: 18px;
+            color: rgba(131, 60, 255, 1);
+            @include mobile{
+                border:none;
+            }
+        }
+        .logo{
+            height: 10px;
+            width: 11px;
+            position: relative;
+            right: 25px;
+        }
+    }
+    .bitmap{
+        .advisorSec{
+            position: relative;
+            left: 85px;
+            top: 150px;
+            .textHeading{
+                color: #fff;
+            }
+            .subHeading{
+                color: #fff;
+            }
+        }
+        .bitmapImg{
+            width: 100%;
+            height: 50%; 
+        }
+        .bitmapHuman{
+            width: 50%;
+            height: 408px;
+            position: relative;
+            left: 50%;
+            bottom: 407px;
+            @include mobile{
+                width: 100%;
+                height: 296;
+                // bottom: 1px;
+                object-fit: cover;
+                position: inherit;
+            }
+        }
+        .KnowMore{
+            position: relative;
+            bottom: 521px;
+            left: 80px;
+            @include mobile{
+                bottom: 13px;
+                left: auto;
+                background: #090924;
+            
+            }
+            .btn{
+                border-radius: 24px;
+                padding: 16px 30px 16px 30px;
+                border-color: #833cff;
+                font-size: 18px;
+                background: rgba(130, 60, 255, 1);
+                color: white;
+                @include mobile{
+                        margin: 10px;
+                        margin-left: 100px;
+                }
+            }
+            .logo{
+                height: 10px;
+                width: 11px;
+                position: relative;
+                right: 25px;
+            }
+        }
+    }
+}
+.mainSec{
+    background-color: aliceblue;
+    width:100%;
+    height:80%;
+    
+        @include mobile{
+            display: flex;
+            margin-bottom: -105px;
+        }  
+    .content_heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 60px;
+        // display: inline-block;
+        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        .content_subHeading{
+            opacity: 0.5;
+            font-size: 20px;
+            @include mobile{
+                font-size: 13px;
+            }
+        }
+        @include iphone5{
+            position: absolute;
+            overflow: overlay;
+            width: 100%;
+            left: -60px;
+            /* right: auto; */
+            top: 760px;
+            background: aliceblue;
+            z-index: 1;
+        }
+        @include iphone6{
+            position: absolute;
+            overflow: overlay;
+            width: 100%;
+            left: -60px;
+            /* right: auto; */
+            top: 767px;
+            background: aliceblue;
+            z-index: 1;
+        }
+        @include mobile{
+            position: absolute;
+            overflow: overlay;
+            width: 100%;
+            left: -60px;
+            /* right: auto; */
+            top: 874px;
+            background: aliceblue;
+            z-index: 1;
+        }
+        
+    }
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        max-width: 94vw;
+        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        @include mobile{
+            position: relative;
+            overflow: auto;
+            white-space: nowrap;
+            width: 100%;
+            top: 243px;
+            z-index: 1;
+            background: aliceblue;
+            height: 399px;
+            display: block;
+            max-width: 100%;
+        }
+        .content_logo{
+        display: flex;
+        flex-direction: row;
+        max-width: 5vw;
+        .logo{
+            object-fit: none;
+            height: 94.86px;
+            width: 94.86;
+            background: url("../../static/assets/images/ellipse.png") no-repeat;
+
+        }
+        .logo_content{
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            @include mobile{
+                font-size: 14px;
+            }
+        }
+    }
+
+    }
+    
+    
+    .exploreMore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        @include mobile{
+            position: absolute;
+            top: 1223px;
+            left: 31px;
+            height: 35px;
+            z-index: 2;
+            /* width: 55%; */
+            background: no-repeat;
+        }
+
+        .btn{
+            border-radius: 24px;
+            padding: 16px 30px 16px 30px;
+            border-color: #833cff;
+            font-size: 18px;
+            color: rgba(131, 60, 255, 1);
+            @include mobile{
+                border:none;
+            }
+        }
+        .logo{
+            height: 10px;
+            width: 11px;
+            position: relative;
+            right: 25px;
+            background: url("../../static/assets/images/ellipse.png") no-repeat;
+
+        }
+    }
+    #search {
+        // width: 450px;
+        /* margin: 4px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 150px;
+        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        @include mobile{
+            z-index: 2;
+        }
+        #searchForm{
+                @include mobile{
+                position: absolute;
+                right: -5px;
+                bottom: 3043px;
+            }
+        }
+
+        .logoBtn{
+            height: 53px;
+            object-fit: contain;
+            position: absolute;
+            right: 347px;
+            @include mobile{
+                left: 246px;
+                right: 0;
+            }
+        }
+    }
+    #search_text{
+        width: 570px;
+        padding: 15px 0 15px 20px;
+        font-size: 16px;
+        /* font-family: Montserrat, sans-serif; */
+        border: 0 none;
+        height: 52px;
+        margin-right: 0;
+        color: black;
+        outline: none;
+        background: #fff;
+        float: left;
+        box-sizing: border-box;
+        transition: all 0.15s;
+        border-radius: 30px;
+        // border: whitesmoke;
+        box-shadow: 0px 0px 2px 0px;
+        @include mobile{
+            width: 320px;
+            margin-right: 50px;
+            position: relative;
+            left: 20px;
+        }
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #9c9898;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #9c9898;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #9c9898;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #9c9898;
+    }
+    #search_text:focus {
+        background: rgb(234, 241, 241);
+    }
+}
+

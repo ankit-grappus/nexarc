@@ -6,6 +6,7 @@ import iconInstagram from "../../static/assets/images/social/icon-instagram.png"
 import iconYoutube from "../../static/assets/images/social/icon-youtube.png";
 import iconTwitter from "../../static/assets/images/social/icon-twitter.png";
 import iconLinkedin from "../../static/assets/images/social/icon-linkedin.png"
+import InfoHubSec from "../../pages/infoHubSec";
 
 // company routes
 export const companyRoutes = [
@@ -159,7 +160,7 @@ export const getSkilledRoutes = [
 // Stay Updated routes
 export const stayUpdatedRoutes = [
   {
-    link: "https://www.nexarc.in/insights/",
+    link: <InfoHubSec />,
     routeName: "Info Hub",
     nxClickEvent: "NXA_FT_UPDATE_INFOHUB"
   },

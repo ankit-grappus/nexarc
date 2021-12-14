@@ -1,11 +1,38 @@
 import TataEnterpriseText from "../tataEnterpriseText";
 import PrimaryButton from "../button";
+import { useEffect, useState } from "react";
 
 // slide 1
 export const Slider1Data = () => {
+  const [sliderData,setSliderData] = useState([])
+  const fetchTestimonials = async () => {
+    await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {console.log(data)
+      return data.json();
+      })
+      .then(post => {setSliderData(post)}); 
+  }
+  console.log(sliderData)
+  useEffect(()=>{
+    fetchTestimonials()
+  },[])
+  console.log('ayushh',(sliderData["marketing-banner"]))
+  // useEffect(()=>{
+  //   if(sliderData){
+  //     sliderData["marketing-banner"].map((val,key)=>{
+  //       console.log("tester",val)
+  //     })
+  //   }
+  // },[])
   return (
     <>
       <div className="slider-content slide-1">
+        {sliderData["marketing-banner"] && sliderData["marketing-banner"].map((val,key)=>{
+          console.log(sliderData,"hey")
+          return(
+            <div>
+            </div>
+          )
+        })}
         {/* <h3 className="heading mx-auto lg">nexarc helps you grow your business</h3>
         <TataEnterpriseText /> */}
           <img className="slider-rt-image absolute" src="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/marketing-banner/1st_bannerBigScreen_20210901_1855@2x.jpg" alt="lappy" width="100%" height="400px" />
@@ -16,6 +43,16 @@ export const Slider1Data = () => {
 
 // slide 2
 export const Slider2Data = () => {
+  // const [sliderData,setSliderData] = useState([])
+  // const fetchTestimonials = async () => {
+  //   await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {
+  //     return data.text();
+  //     })
+  //     .then(post => {setSliderData(post)}); 
+  // }
+  // useEffect(()=>{
+  //   fetchTestimonials()
+  // },[])
   return (
     <>
       <div className="slider-content slide-2">
@@ -34,6 +71,16 @@ export const Slider2Data = () => {
 
 // slide 3
 export const Slider3Data = () => {
+  // const [sliderData,setSliderData] = useState([])
+  // const fetchTestimonials = async () => {
+  //   await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {
+  //     return data.text();
+  //     })
+  //     .then(post => {setSliderData(post)}); 
+  // }
+  // useEffect(()=>{
+  //   fetchTestimonials()
+  // },[])
   return (
     <>
       <div className="slider-content slide-3">

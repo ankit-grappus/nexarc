@@ -1,3 +1,5 @@
+import InfoHubSec from "../../pages/infoHubSec"
+
 export const menuItem = [
   {
     menuTitle: "Find Opportunities",
@@ -81,7 +83,7 @@ export const menuItem = [
     submenu: [
       {
         title: "Info Hub",
-        submenuLink: "https://www.nexarc.in/insights/",
+        submenuLink: "infoHubSec",
         eventClickName: "NXA_HM_HEAD_UPDATE_INFOHUB"
       },
       {

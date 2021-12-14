@@ -18,10 +18,13 @@ function TestimonialSlider() {
   const slider2 = useRef();
 
   const fetchTestimonials = async () => {
-    const response = await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus');
-    const data = await response.json();
-    console.log("ayush",data)
-    
+    // const response = await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus');
+    // const data = await response.json();
+    // console.log("ayush",data)
+    await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {
+      return data.json();
+      })
+      .then(post => {setTestimonialData(post)}); 
   }
   useEffect(() => {
     setNav1(slider1);
@@ -29,7 +32,7 @@ function TestimonialSlider() {
     fetchTestimonials();
   }, []);
 
-  // console.log("testing",testimonialData)
+  console.log("testing",testimonialData)
 
   var settings = {
     // dots: (media.matches === true ? true : null),

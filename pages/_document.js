@@ -16,6 +16,8 @@
 // export default AppDocument
 
 import Document, { Head, Html, Main, NextScript, } from 'next/document';
+import Footer from '../components/footer';
+import Header from '../components/header';
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -65,7 +67,9 @@ class MyDocument extends Document {
           </noscript>
           {/*  End Google Tag Manager (noscript) */}
           <Main />
+          {/* <Header /> */}
           <NextScript />
+          {/* <Footer /> */}
           
         </body>
       </Html >
