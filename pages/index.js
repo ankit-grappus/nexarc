@@ -19,7 +19,7 @@ export default function App() {
           <div className="looking-for--sec">
             <div className="container-fluid custom">
               <LookingForSec
-                secHeading="What are you looking for?"
+                secHeading=" are you looking for?"
               />
             </div>
           </div>
