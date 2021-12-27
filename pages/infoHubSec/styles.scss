@@ -235,7 +235,7 @@
         flex-direction: column;
         margin: 60px;
         // display: inline-block;
-        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        background: url("../../static/assets/images/Ellipse.png") no-repeat;
         .content_subHeading{
             opacity: 0.5;
             font-size: 20px;
@@ -281,7 +281,7 @@
         align-items: center;
         flex-direction: row;
         max-width: 94vw;
-        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        background: url("../../static/assets/images/Ellipse.png") no-repeat;
         @include mobile{
             position: relative;
             overflow: auto;
@@ -302,7 +302,7 @@
             object-fit: none;
             height: 94.86px;
             width: 94.86;
-            background: url("../../static/assets/images/ellipse.png") no-repeat;
+            background: url("../../static/assets/images/Ellipse.png") no-repeat;
 
         }
         .logo_content{
@@ -324,7 +324,7 @@
         justify-content: center;
         align-items: center;
         margin: 50px;
-        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        background: url("../../static/assets/images/Ellipse.png") no-repeat;
         @include mobile{
             position: absolute;
             top: 1223px;
@@ -350,7 +350,7 @@
             width: 11px;
             position: relative;
             right: 25px;
-            background: url("../../static/assets/images/ellipse.png") no-repeat;
+            background: url("../../static/assets/images/Ellipse.png") no-repeat;
 
         }
     }
@@ -364,7 +364,7 @@
         margin-right: auto;
         margin-left: auto;
         margin-top: 150px;
-        background: url("../../static/assets/images/ellipse.png") no-repeat;
+        background: url("../../static/assets/images/Ellipse.png") no-repeat;
         @include mobile{
             z-index: 2;
         }

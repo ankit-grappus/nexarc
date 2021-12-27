@@ -87,7 +87,7 @@ function InfoHubSec() {
                 
                 <img className="bitmapImg" src="../../static/assets/images/bitmap.png" alt="arrow logo" width="137" height="33" />
                 <div>
-                    <div class="left"></div>
+                    <div className="left"></div>
                     <img className="bitmapHuman" src="../../static/assets/images/bitmapHuman.png" alt="arrow logo" width="137" height="33" />
                 </div>
                 <div className="KnowMore">

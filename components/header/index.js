@@ -91,23 +91,23 @@ function Header() {
               </div>
             </div>
             {expand &&
-              <div class="search-content-box" id="search-content-box">
-                <input class="search-input" type="text" placeholder="Type here to search" />
-                <div class="search-content">
-                  <h3 class="search-title">You might be interested in</h3>
-                  <div class="column-content">
-                    <div class="left-column">
+              <div className="search-content-box" id="search-content-box">
+                <input className="search-input" type="text" placeholder="Type here to search" />
+                <div className="search-content">
+                  <h3 className="search-title">You might be interested in</h3>
+                  <div className="column-content">
+                    <div className="left-column">
                       {searchItems.map((item) => {
                         return (
-                          <a class="search-item" href={item.link}>
-                            <div class="title">{item.title}</div>
-                            <div class="label">{item.label}</div>
+                          <a className="search-item" href={item.link}>
+                            <div className="title">{item.title}</div>
+                            <div className="label">{item.label}</div>
                           </a>
                         )
                       })}
                     </div>
-                    <div class="right-column">
-                      <a class="browseAll" href="https://www.nexarc.in/all-list/">Browse All</a>
+                    <div className="right-column">
+                      <a className="browseAll" href="https://www.nexarc.in/all-list/">Browse All</a>
                     </div>
                   </div>
                 </div>
