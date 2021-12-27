@@ -5,17 +5,17 @@ import { useEffect, useState } from "react";
 // slide 1
 export const Slider1Data = () => {
   const [sliderData,setSliderData] = useState([])
-  const fetchTestimonials = async () => {
-    await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {console.log(data)
-      return data.json();
-      })
-      .then(post => {setSliderData(post)}); 
-  }
-  console.log(sliderData)
-  useEffect(()=>{
-    fetchTestimonials()
-  },[])
-  console.log('ayushh',(sliderData["marketing-banner"]))
+  // const fetchTestimonials = async () => {
+  //   await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {console.log(data)
+  //     return data.json();
+  //     })
+  //     .then(post => {setSliderData(post)}); 
+  // }
+  // console.log(sliderData)
+  // useEffect(()=>{
+  //   fetchTestimonials()
+  // },[])
+  // console.log('ayushh',(sliderData["marketing-banner"]))
   // useEffect(()=>{
   //   if(sliderData){
   //     sliderData["marketing-banner"].map((val,key)=>{
@@ -26,13 +26,13 @@ export const Slider1Data = () => {
   return (
     <>
       <div className="slider-content slide-1">
-        {sliderData["marketing-banner"] && sliderData["marketing-banner"].map((val,key)=>{
+        {/* {sliderData["marketing-banner"] && sliderData["marketing-banner"].map((val,key)=>{
           console.log(sliderData,"hey")
           return(
             <div>
             </div>
           )
-        })}
+        })} */}
         {/* <h3 className="heading mx-auto lg">nexarc helps you grow your business</h3>
         <TataEnterpriseText /> */}
           <img className="slider-rt-image absolute" src="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/marketing-banner/1st_bannerBigScreen_20210901_1855@2x.jpg" alt="lappy" width="100%" height="400px" />
