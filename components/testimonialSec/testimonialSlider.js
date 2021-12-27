@@ -5,11 +5,9 @@ import "./styles.scss"
 import Slider from "react-slick";
 
 import PrimaryButton from "../button";
-import { sliderData, thumbnailData,nexaCustomerData } from "./testimonialData";
+// import { sliderData, thumbnailData,nexaCustomerData } from "./testimonialData";
 
 function TestimonialSlider() {
-
-  // const media = window.matchMedia(`(max-width: 1024px)`);
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   const [testimonialData, setTestimonialData] = useState([])
@@ -18,9 +16,6 @@ function TestimonialSlider() {
   const slider2 = useRef();
 
   const fetchTestimonials = async () => {
-    // const response = await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus');
-    // const data = await response.json();
-    // console.log("ayush",data)
     await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {
       return data.json();
       })
@@ -31,8 +26,6 @@ function TestimonialSlider() {
     setNav2(slider2);
     fetchTestimonials();
   }, []);
-
-  console.log("testing",testimonialData)
 
   var settings = {
     // dots: (media.matches === true ? true : null),
@@ -55,7 +48,7 @@ function TestimonialSlider() {
         adaptiveHeight={true}
         className="sliderData-slider"
       >
-        {nexaCustomerData.map((item, index) => {
+        {testimonialData["customer-testimonial"]?.map((item, index) => {
           return (
             <>
               <div className="slider-content-block" key={index}>
@@ -72,7 +65,7 @@ function TestimonialSlider() {
                       <div className="testimonial-content">
                         <h2 className="message">{item.quote}</h2>
                         <h3 className="user-name">{item.name}</h3>
-                        <h3 className="user-details">{item.companyLocation}</h3>
+                        <h3 className="user-details">{item['company-location']}</h3>
                         <div className="action-box">
                           <PrimaryButton
                             buttonName="Try now"
@@ -101,7 +94,7 @@ function TestimonialSlider() {
         infinite={false}
         className="thumbnail-slider"
       >
-        {nexaCustomerData.map((data, index) => {
+        {testimonialData["customer-testimonial"]?.map((data, index) => {
           return (
             <>
               <div key={index} className="slider-thumbnail-block" nx-click-event={data.nxClickEventBox}>
@@ -111,7 +104,7 @@ function TestimonialSlider() {
                   </div>
                   <div className="user-details-box">
                     <h2 className="username">{data.name}</h2>
-                    <h3 className="user-details">{data.companyName}</h3>
+                    <h3 className="user-details">{data['company-name']}</h3>
                   </div>
                 </div>
               </div>

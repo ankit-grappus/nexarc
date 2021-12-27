@@ -1,7 +1,19 @@
+import { useEffect, useState } from "react";
 // styles
 import "./styles.scss"
 
-function TabInnerContent({ details }) {
+function TabInnerContent({ tabIndex }) {
+  const [serviceOffering, setServiceOffering] = useState([])
+  const fetchServiceOffering = async () => {
+    await fetch('https://www.nexarc.in/nexarc/GetHomepageDataForGrappus').then(data => {
+      return data.json();
+      })
+      .then(post => {setServiceOffering(post)}); 
+  }
+  useEffect(() => {
+    fetchServiceOffering();
+  }, []);
+  console.log("ay",serviceOffering)
   return (
     <>
       <div className="tab-content-block">

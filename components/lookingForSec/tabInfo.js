@@ -1,31 +1,25 @@
 import NavHeading from "./navHeading";
 import TabInnerContent from "./tabInnerContent";
 
-import { tab1Content, tab2Content, tab3Content,serviceOffering } from "./tabData";
+import { tab1Content, tab2Content, tab3Content } from "./tabData";
 
 export const navItems = [
   {
     navLink:
       <NavHeading
-        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
-        tabName="Grow your business"
-        nxEventClick="NXA_WAYLF_GROW"
+        tabName={0}
       />,
   },
   {
     navLink:
       <NavHeading
-        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab1/icon.svg"
-        tabName="Improve business operations"
-        nxEventClick="NXA_WAYLF_IMPROVE"
+        tabName={1}
       />,
   },
   {
     navLink:
       <NavHeading
-        icon="https://apps.tcsionhub.in/dotcom/staticpages/front-end/static-appcode/nexarc/homepage/images/service-offering/tab2/icon.svg"
-        tabName="Learn & stay updated"
-        nxEventClick="NXA_WAYLF_LEARN"
+        tabName={2}
       />,
   },
 ]
