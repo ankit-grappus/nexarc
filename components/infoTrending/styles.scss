@@ -6,7 +6,7 @@
         height: 85vh;
         background-color: white;
         /* z-index: 3; */
-        margin-top: 630px;
+        margin-top: 715px;
         @include mobile{
             z-index: 2;
             top: 47px;
@@ -47,9 +47,12 @@
             justify-content: center;
             flex-direction: column;
             // margin: 60px;
+            height: 160px;
+            position: relative;
             @include mobile{
                 background: aliceblue;
                 margin-bottom: -20px;
+                height: auto;
             }
             .topTrendingSubHeading{
                 opacity: 0.5;
