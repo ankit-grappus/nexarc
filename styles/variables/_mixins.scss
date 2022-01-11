@@ -38,7 +38,7 @@
 // ----------------------------------
 // Media Query Mixin
 // ----------------------------------
-$iphone5-width: 360px;
+$iphone5-width: 370px;
 $iphone6-width: 375px;
 $tablet-width: 768px;
 $tablet-p-width: 991px;
@@ -139,13 +139,13 @@ $desktop-width-xl: 1900px;
 
 // Custom devices
 @mixin rwd($screen) {
-  @media (max-width: $screen+"px") {
+  @media (max-width: #{$screen+"px"}) {
     @content;
   }
 }
 // custom devices landscape
 @mixin rwd-o-l($screen) {
-  @media (max-width: $screen+"px") and (orientation: landscape) {
+  @media (max-width: #{$screen+"px"}) and (orientation: landscape) {
     @content;
   }
 }
