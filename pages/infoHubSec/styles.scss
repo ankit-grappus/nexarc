@@ -2,7 +2,7 @@
 @import "../../styles/variables/mixins";
 .info-container{
     // position: absolute;
-    // overflow: hidden;
+    overflow: hidden;
     .banner{
         width: 100%;
         height: 75vh;
@@ -84,7 +84,7 @@
     .mainSec{
         background-color: aliceblue;
         width:100%;
-        height:65vh;
+        height:75vh;
         position: absolute;
         z-index: 4;
             @include mobile{
