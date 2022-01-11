@@ -56,7 +56,7 @@
             height: auto;
             position: relative;
             left: 50%;
-            bottom: 533px; // for local
+            // bottom: 533px; // for local
             bottom:250px;//for deployment
             @include mobile{
                 width: 100%;
