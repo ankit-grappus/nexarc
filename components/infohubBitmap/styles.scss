@@ -10,7 +10,10 @@
         margin-top: 100px;
 
         @include mobile{
-            max-height: 98vh;
+            // max-height: 98vh;
+            max-height: 60vh;
+            // z-index: 8;
+            margin-top: 100%;
         }
         @include iphone5{
             max-height: 215vh;
@@ -27,14 +30,14 @@
             @include mobile{
                 position: relative;
                 left: 20px;
-                top: 125px;
+                // top: 125px;
             }
 
             @include iphone5{
                 position: relative;
                 left: 18px;
                 /* z-index: 5; */
-                top: 355px;
+                // top: 355px;
             }
         }
         .bitmapImg{
@@ -56,22 +59,27 @@
             height: auto;
             position: relative;
             left: 50%;
-            // bottom: 533px; // for local
-            bottom:250px;//for deployment
+            bottom: 533px; // for local
+            // bottom:250px;//for deployment
             @include mobile{
+                // width: 100%;
+                // height: 250px;
+                // // bottom: 1px;
+                // object-fit: scale-down;
+                // position: inherit;
+                // margin-top: 190px;
                 width: 100%;
-                height: 250px;
-                // bottom: 1px;
-                object-fit: scale-down;
+                /* height: 250px; */
+                /* object-fit: unset; */
                 position: inherit;
-                margin-top: 190px;
+                margin-top: 12px;
             }
             @include iphone5{
                 width: 100%;
                 height: 296px;
                 object-fit: contain;
                 position: initial;
-                margin-top: 318px;
+                // margin-top: 318px;
             }
         }
         .KnowMore{

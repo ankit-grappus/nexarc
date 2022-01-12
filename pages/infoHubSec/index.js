@@ -13,7 +13,11 @@ function InfoHubSec() {
         <div className="banner">
             <h2 className="bannerHeading">Info Hub</h2>
             <h5 className="bannerSub">Your trusted source of relevant information</h5>
-            <img className="bannerImg" src="../../static/assets/images/banner.png" alt="nexarc logo" width="137" height="33" />
+            <div className="banner_background">
+                <img className="bannerImg" src="../../static/assets/images/human_1.png" alt="nexarc logo" width="137" height="33" />
+                <img className="bannerImg1" src="../../static/assets/images/human_2.png" alt="nexarc logo" width="137" height="33" />
+                <img className="bannerImg2" src="../../static/assets/images/arc.png" alt="nexarc logo" width="137" height="33" />
+            </div>
             <img className="bannerContent" src="../../static/assets/images/bannerContent.png" alt="nexarc logo" width="137" height="33" />
             <img className="bannerContentMobile" src="../../static/assets/images/mobBanner.png" alt="nexarc logo" width="137" height="33" />
 
