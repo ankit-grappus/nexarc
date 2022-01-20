@@ -19,7 +19,7 @@ function InfohubBitmap(){
                     </div>
                     <div className="curatedListSec">
                         <img className="curatedImg" src="../../static/assets/images/fi_check-circle.png" alt="text" />
-                        <p className="curatedText">Curated list of business advisors and subject matter experts</p>
+                        <p className="curatedText">Meetings and webinars designed for you</p>
                     </div>
                 </div>
                 {/* <img className="bitmapImg" src="../../static/assets/images/bitmap.png" alt="arrow logo" width="137" height="33" /> */}
