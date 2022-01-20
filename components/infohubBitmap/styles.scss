@@ -14,7 +14,7 @@
         @include mobile{
             // max-height: 98vh;
             flex-direction: column;
-            max-height: 85vh;
+            max-height: 100vh;
             // z-index: 8;
             margin-top: 100%;
         }
@@ -61,14 +61,32 @@
                 display: none;
             }
         }
-        .advivorSecText{
-            display: none;
+        .curatedList{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+
+            @include mobile{
+                margin-left: 5%;
+            }
+            .curatedListSec{
+                display: flex;
+                flex-direction: row;
+                .curatedImg{
+                    width: 20px;
+                    height: 20px; 
+                }
+
+                .curatedText{
+                    color: #fff;
+                }
+            }
             @include mobile{
                 display: block;
             }
         }
         .KnowMore{
-            margin-left: 50px;
+            margin-left: 5.5%;
             // position: relative;
             // bottom: 40vh;
             position: absolute;
